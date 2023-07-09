@@ -64,7 +64,7 @@ async def ask(request: FoodRequest):
         messages = []
         
         address = request.address
-        nearby_food_info, food_info_json = get_nearby_food_info(address, term="food", radius=2000, sort_by="best_match", limit=25)
+        nearby_food_info, food_info_json = get_nearby_food_info(address, term="food", radius=2000, sort_by="best_match", limit=50)
         
         print("Food info tokens:", num_tokens_from_string(nearby_food_info))
         prompt = open('system_prompt.txt', 'r').read()
