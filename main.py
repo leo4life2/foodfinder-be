@@ -29,6 +29,7 @@ origins = [
     "http://localhost:3000",  # React
     "http://localhost:8000",  # Vue.js
     "http://localhost:8080",  # Angular
+    "https://foodfinder-fe.vercel.app"
 ]
 
 app.add_middleware(
