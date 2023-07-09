@@ -1,0 +1,2051 @@
+You are FoodFinder, an assistant that helps people find restaurant and dishes they are interested in eating. You will be given a list of restaurants and their menus below. Help user with picking a restaurant, and give specific examples of dishes they may be interested in. You MUST ONLY use the information provided below. You may use the chat history to help you with your responses. DO NOT make up information that is not provided, such as restaurant names or dish names. When giving a recommendation, first give the restaurant name, then the dish, and a description and why it fits the requirements. Do not make up nutritional facts such as specific grams of nutrition for dishes if it is not explicitly given.
+Your response MUST be in the following format:
+
+In the very beginning, a short text that says what the AI assistant recommends and why.
+Restaurant: The name of the restaurant.
+Dish: The name of the dish.
+Description: A text description of the dish
+Comment: The AI should explain why it recommends it, and how it suits the user's preference.
+
+You can have multiple dishes under a restaurant, and you can have multiple restaurants.
+The one thing you MUST remember is that the restaurant names must be prefixed with the word "Restaurant:" and the dish names must be prefixed with the word "Dish:".
+
+Remember, your output MUST be in that format above.
+
+Restaurants:
+Restaurant: 22 SLU
+Rating: 5.0
+Menu:
+	Entrees
+		Dish: Dynamite Burger
+		Description: Serrano pepper infused 100% beef patty served on a brioche bun with Pepper Jack cheese, fresh butter lettuce, onion, tomato, dill pickles, applewood smoked bacon, and spicy aioli. Served with crispy fries. **Burger can be made GF, DF
+		Dish: Western BBQ Burger
+		Description: 100% beef patty slathered in tangy house-made BBQ sauce served on a brioche bun, and topped with crispy onions, cheddar cheese, fresh butter lettuce, tomato, and dill pickles. Served with crispy fries ** Burger can be made GF, DF
+		Dish: Bacon Cheddar Burger
+		Description: 100% beef patty grilled with applewood smoked bacon and cheddar cheese. Served on a brioche bun with the works: fresh butter lettuce, tomato, onion, dill pickles, and house-made burger sauce. Served with crispy fries.**Burger can be made GF, DF
+		Dish: Cheddar Burger
+		Description: 100% beef patty grilled with cheddar cheese. Served on a brioche bun topped with the works: fresh butter lettuce, tomato, onion, dill pickles, and house-made burger sauce. Served with crispy fries
+		Dish: Burger
+		Description: 100% beef patty on a brioche bun served with the works: fresh butter lettuce, tomato, onion, dill pickles, and house-made burger sauce. Served with crispy fries
+		Dish: Katsu Chicken Sandwich
+		Description: Panko crusted chicken katsu with melted cheddar cheese served on a brioche bun. Topped with tomato, coleslaw, and spicy aioli. Served with crispy fries **Sandwich can be made GF
+		Dish: Chicken Parmesan
+		Description: Panko crusted fried chicken breast coated in mozzarella cheese served with spaghetti and a traditional house-made san marzano tomato sauce infused with Mama Lils Peppers for a sweet and spicy kick. Topped with grana padano cheese, fresh herbs, and sun-dried tomatoes
+		Dish: Blackened Chicken
+		Description: Grilled blackend spice chicken breast served atop a bright cabbage and carrot coleslaw. Accompanied with a warm yukon potato salad tossed in roasted corn, bacon, green onions blended with a creamy horseradish aioli. Topped with fresh herbs and charred scallion oil*GF, DF
+		Dish: Beer Battered Fish Tacos
+		Description: Two crispy beer battered pacific cod tacos, served on corn tortillas. Topped with a bright citrus slaw and pico de gallo. Served with crispy fries.*DF**Can be made GF
+		Dish: Green Bliss Garden Burger
+		Description: A plant based patty, served on brioche bun with tomato, pickles, red onion, avocado, and spring mix and garlic aioli dressing. Served with crispy fries
+		Dish: Grilled Chicken Sandwich
+		Description: 4.5oz grilled chicken breast served on brioche bun with tomato, red onion, pickles, springs mix, and spicy aioli. Served with crispy fries
+		Dish: Seattle Dog
+		Description: A Seattle classic! 8" Quarter pound 100% beef polish dog served with caramelized onions and jalapeno cream cheese on a bun.
+		Dish: Swiss Mushroom Melt Burger
+		Description: 100% beef patty grilled with swiss cheese. Served on a brioche bun topped with springs mix, tomato, sauted baby bella mushrooms, carmelized onion, and garlic aoili. Served with crispy fries
+	Apps
+		Dish: French Fries
+		Description: Crispy french fries, served with ketchup
+		Dish: Garlic Fries
+		Description: A baseball fan favorite! Crispy french fries tossed with minced garlic, parsley, and grana padano cheese. Served with aioli sauce. **Can be made VE
+		Dish: Onions Rings
+		Description: Tempura-battered onion rings served with house-made garlic aioli
+		Dish: Sweet & Spicy Edamame
+		Description: Steamed edamame tossed in a sweet and spicy garlic chili oil with sesame seeds. *GF, VE
+		Dish: South Lake Union Sliders
+		Description: Three 100% beef patties served on sweet Hawaiian dinner rolls. Topped with lettuce, tomato, onion, cheddar cheese, and house-made special sauce. **Can be made GF, DF
+		Dish: Spin Dip
+		Description: Sauted spinach, roasted artichoke, melted mozzarella, served with house-made corn tortilla chips.*GF
+		Dish: Chicken Snackwrap
+		Description: Fried chicken, lettuce, bacon, cheddar and ranch wrapped in a flour tortilla.
+		Dish: Cajun Waffle Fries
+		Description: A loaded basket of crispy waffle fries seasoned with a cajun spice. Served with a BBQ Ranch sauce.
+	Salads
+		Dish: Santa Fe Salad
+		Description: Romaine lettuce tossed in house-made southwest peanut lime dressing. Piled high with blackened chicken, crunchy corn tortilla strips, black beans, avocado, roasted corn, pickled jalapeos, and cherry tomatoes.*GF, DF**Can be made VE
+		Dish: Lemon Poppy Seed Beach Salad
+		Description: House-made lemon poppy seed dressing served over fresh spring mix, grilled chicken, strawberries, avocado, red quinoa, goat cheese, and candied pecans. *GF**Can be made VE
+		Dish: SLU Seasonal Salad
+		Description: Maple balsamic vinaigrette, served over crisp arugula, roasted acorn squash, pomegranate seeds, pepitas, and goat cheese. *GF**Can be made VE
+		Dish: Cobb Salad
+		Description: Romaine topped with blackened chicken, tomatoes, bacon, breadcrumbs and a soft boiled egg. Garnished with grana padano cheese, lemon juice, and served with a classic caesar dressing.
+		Dish: Chicken Caesar Salad
+		Description: Grilled chicken served over romaine lettuce, topped with caesar dressing, croutons, and grana padano cheese. Finished with a squeeze of lemon.
+	Desserts
+		Dish: Chocolate Mousse
+		Description: Chocolate mousse with cookie crumble crust.
+		Dish: Strawberry Cheese Cake Mousse
+		Description: Strawberry cheesecake flavoured mousse with cookie crumble crust.
+		Dish: Chocolate Souffle
+		Description: Chocolate souffle with warm melted chocolate center
+		Dish: Deep-Fried Oreos
+		Description: 4 Oreos battered in house-made pancake mix and then deep fried. Served with a side of chocolate sauce.
+		Dish: Deep-Fried Twinkie
+		Description: 1 Twinkie deep-fried in house-made pancake batter mix
+	Drinks
+		Dish: Coke
+		Dish: Diet Coke
+		Dish: Sprite
+		Dish: Vanilla-Bean Milkshake
+		Description: 16oz vanilla milkshake
+		Dish: Chocolate Milkshake
+		Description: 16oz chocolate milkshake
+		Dish: Strawberry Milkshake
+		Description: 16oz strawberry Milkshake with raspberry drizzle
+		Dish: Oreo Milkshake
+		Description: 16oz vanilla shake mixed with crumbled Oreo cookie pieces and chocolate drizzle
+		Dish: San Pellegrino Sparkling Water
+		Description: 16.9 fl oz bottle of refreshing San Pellegrino sparkling water
+		Dish: Lime La Croix
+		Description: Lime Sparkling Water
+		Dish: Lemon La Croix
+		Description: Lemon Sparkling Water
+		Dish: Limoncello La Croix
+		Description: Limoncello Sparkling Water
+		Dish: Pamplemousse La Croix
+		Description: Grapefruit Sparkling Water
+
+Restaurant: Toulouse Petit Kitchen & Lounge
+Rating: 4.0
+Menu:
+	Brunch and Breakfast Mains Composed
+		Dish: Utensils
+		Price: $0.00
+		Description: Add utensils only if you need them.
+		Dish: Chicken Fried Chicken with Creole Sausage Gravy and Two Farm Fresh Eggs
+		Price: $19.00
+		Description: Comes with creole fennel sausage gravy and housemade buttermilk biscuits.
+		Dish: Spicy Housemade Andouille Hash with Tomato Confit with Two Farm Fresh Eggs
+		Price: $19.00
+		Description: Mama lil's peppers, tasso, caramelized shallots, thyme, chives.
+		Dish: Creole Patagonian Prawns, Crawfish and Housemade Andouille with Two Farm Fresh Eggs
+		Price: $26.00
+		Description: Our second best selling brunch plate with deep creole flavors of the french quarter. Served with creamy red mill and gruyere corn grits.
+		Dish: Muscovy Duck Confit Hash with Two Farm Fresh Eggs
+		Price: $21.00
+		Description: Butternut squash and brussels sprouts hash. Parsnips, fine herbes, caramelized shallots, thyme, chives.
+		Dish: Smoked Trout and Tender Spring Jumbo Asparagus Hash with Two Farm Fresh Eggs
+		Price: $21.00
+		Description: Fingerling potatoes, seasonal greens, tender asparagus, caramelized shallots, thyme, chives, chervil.
+		Dish: Toulouse Local Farms Beef, Lamb and Kurobota Pork Bolognese Breakfast with Two Farm Fresh Eggs
+		Price: $21.00
+		Description: Over crescenza cheese bruschette. Ranches Okanogan beef, Anderson ranches from Oregon lamb and Carlton farms kurobota porksshoulder, Grana Padano, arugula, parsley, sage. Over bruschetta with crescenza cheese.
+		Dish: Toulouse AR Lamb Sausage over Green Lentils de Puy with Two Farm Fresh Eggs
+		Price: $21.00
+		Description: Over green french lentils de puy. Housemade fennel sausage with sage, mace, garlic and fresh herbs. Over French green lentils de puy with bacon lardons, butter nut squash, parsley, and fried sage.
+		Dish: Shrimp Creole with Patagonian Prawns Breakfast with Two Farm Fresh Eggs
+		Price: $26.00
+		Description: Comes with red mill corn grits. The classic shrimp creole preparation found in the French Quarter. This preparation has no cream in the creole tomato sauce. Served over creamy Red Mill and Gruyere corn grits.
+		Dish: BBQ Shrimp New Orleans Breakfast with Creamy Grits and Two Farm Fresh Eggs
+		Price: $26.00
+		Description: Patagonian prawns in a bright brick red "BBQ New Orleans" sauce with lemon, worcestershire, garlic and our creole seasonings . Served over creamy Red Mill and Gruyere corn grits.
+		Dish: Bayou "Fisherman's Breakfast" with Creamy Grits and Two Farm Fresh Eggs
+		Price: $28.00
+		Description: Local long line fresh Pacific rock fish, patagonian prawns and crawfish is a creole tomato sofrito. Served over creamy Red Mill and Gruyere corn grits.
+		Dish: Crisp and Velvety Croque Madame and Mornay with Two Poached Eggs
+		Price: $21.00
+		Description: SRF Kurobota ham, caved aged Gruyere, macrina bakery rustic bread, velvety mornay with Gruyere. Serve with breakfast potatoes.
+		Dish: Toulouse Breakfast Sandwich with Applewood Smoked Bacon and Avocado
+		Price: $18.00
+		Description: Fried egg, applewood smoked bacon, avocado, bibb lettuce, roma tomatoes, red onion, fresh herbs mayo, Macrina bakery rustic bread. Served with breakfast potatoes.
+		Dish: Frisee, Arugula and Bacon Lardons Breakfast "Lyonnaise"
+		Price: $18.00
+		Description: Frisee, carlton farms bacon lardons, castlefranco, arugula, fingerling potato coins, shallots, tarragon, crostini, fine herbes, grain mustard vinaigrette. Two poached farm fresh eggs.
+	Eggs Benedict with Toulouse Vieux Carre Hollandaise
+		Dish: Utensils
+		Price: $0.00
+		Description: Add only if needed
+		Dish: Eggs Benedict with SRF Kurobota Ham
+		Price: $20.00
+		Dish: Eggs Benedict with Fried Yearling Hama Hama Yearling Oysters and Applewood Bacon
+		Price: $22.00
+		Description: Comes with our rich smoky bordelaise.
+		Dish: Eggs Benedict "Florentine" with Arugula and Roma Tomatoes
+		Price: $19.00
+		Dish: Eggs Benedict with Avocado and Roma Tomatoes
+		Price: $19.00
+		Dish: Eggs Benedict "Hussarde" with Kurobota Ham and Shallot Demi Glace
+		Price: $22.00
+		Description: Comes with our rich smoky bordelaise.
+		Dish: Eggs Benedict 'Charcutieres' with Rustic Duck and Pistachio Terrine
+		Price: $24.00
+		Description: Comes with our rich smoky bordelaise.
+		Dish: Acadiana Benedict with Dungeness Crab, Shrimp, and Andouille Sausage
+		Price: $28.00
+		Description: Comes with our creole hollandaise.
+		Dish: Eggs Benedict with Dungeness Crab and Fine Herbes
+		Price: $30.00
+	Softly Scrambled Eggs the Toulouse Way
+		Dish: Utensils
+		Price: $0.00
+		Dish: "Big Easy" Housemade Andouille Sausage and Tomato Confit
+		Price: $18.00
+		Description: Cave aged gruyere, holy trinity, fine herbes, tasso-black pepper gravy.
+		Dish: Housemade Tasso, Asparagus and Tomato Confit with Fine Herbes
+		Price: $18.00
+		Description: Comes with cave aged Gruyere.
+		Dish: Toulouse Kurobota Sausage with Stilton Bleu Cheese and Tomato Confit
+		Price: $18.00
+		Description: Coombe's castle stilton bleu cheese with tomato and garlic confit. Fine herbes and velvety Mornay.
+		Dish: Smoked Trout and Artichoke Hearts with Cave Aged Gruyere and Fine Herbes
+		Price: $20.00
+		Description: Comes with cave aged Gruyere, fine herbes and creme fraiche.
+		Dish: "Forestiere" Softly Scrambled Eggs with Oyster Mushrooms
+		Price: $19.00
+		Description: Gruyere, asparagus fine herbes and white truffle oil.
+		Dish: Piquillo Pepper and Lauren Chenel Chevre Scramble
+		Price: $18.00
+		Description: Arugula, garlic confit, shallot, chives, parsley, tarragon, chervil.
+		Dish: SRF Kurobota Ham, Cave Aged Gruyere and Fine Herbes
+		Price: $19.00
+		Dish: "Acadiana" Softly Scrambled Eggs with Dungeness Crab, Patagonian Prawns and Asparagus
+		Price: $28.00
+		Description: Dungeness crab, shrimp, andouille, tomato confit, asparagus, garlic confit, fine herbes, creole hollandaise.
+		Dish: Dungeness Crab and Asparagus Softly Scrambled Eggs
+		Price: $30.00
+		Description: Comes with cave aged Gruyere and fine herbes, dungeness crab, asparagus, garlic confit, fine herbes, velvety Mornay.
+	Toulouse Beignets and Creme Caramel French Toast at Brunch
+		Dish: Utensils
+		Price: $0.00
+		Dish: Small Beignets with Chicory Anglaise and Powdered Sugar
+		Price: $11.00
+		Description: 5 pieces. Pillowy golden beignets in the class French quarter style.
+		Dish: PLarge Housemade Beignets with Chicory Anglaise and Powdered Sugar
+		Price: $16.00
+		Description: 10 pieces. Pillowy golden beignets in the class French quarter style.
+		Dish: Creme Caramel French Toast with Pecan Butter and Fresh Strawberries
+		Price: $16.00
+		Description: Macrina bakery brioche thick sliced. Served with whipped pecan butter and fresh strawberries.
+	For the Table
+		Dish: Utensils
+		Price: $0.00
+		Dish: Marcona Almonds Valenciana
+		Price: $7.00
+		Description: Best valenciana almonds in the world from Spain, smoked parika, fried rosemary, thyme.
+		Dish: Castelvetrano Olives
+		Price: $9.00
+		Description: The meaty, mildy briny green olive from southern Italy.
+		Dish: Fried Brussels Sprouts with Piquillo Sriracha Rouille
+		Price: $12.00
+		Dish: Wild Wheat Baguette
+		Price: $7.00
+	The Art of the Salad
+		Dish: Utensils
+		Price: $0.00
+		Dish: Toulouse Market Salad
+		Price: $14.00
+		Description: Haricots verts, asparagus, artichokes, golden beets, heirloom tomatoes, fine herbes, nicoise olives, frisee, and champagne vinaigrette.
+		Dish: Yellow Beets, Haricots Verts, Pistachios and Stilton Bleu Salad
+		Price: $14.00
+		Description: Nicoise olives, fines herbes, pistachios, walnut vinaigrette.
+		Dish: Bibb Lettuce and Arugula Salad with Pistachios & Fines Herbes
+		Price: $10.00
+		Description: Shallots, fine herbes, pistachios, champ-grain mustard vinaigrette.
+		Dish: Hearts of Romaine Salad with Crisp Hot Coppa and Grana Padano
+		Price: $12.00
+		Description: grana padano, cesar emulsion, crostini, parsley
+		Dish: Frisee and Bacon Lardons Salad Lyonnaise
+		Price: $13.00
+		Description: Comes with a poached hen egg. Fines herbes, tarragon, grain mustard vinaigrette.
+		Dish: Smoked Trout and Fingerling Coins Salad Parisian Style
+		Price: $17.00
+		Description: Fingerling coins, tarragon, lemon creme fraiche-caper dressing.
+		Dish: Creole Patagonian Prawn, Heirloom Tomatoes and Avocado Salad
+		Price: $17.00
+		Description: Arugula, bibb lettuce, tomatoes, avocado, and herbs with champagne vinaigrette.
+		Dish: Fried Yearling Oysters Salad with Bacon Lardons Lyonnaise
+		Price: $17.00
+		Description: Frisee, castlefranco, shallots, tarragon, fingerling coins, creole remoulade.
+		Dish: Nola Salad with Dungeness Crab and Wild Prawns
+		Price: $32.00
+		Description: Small entree. Dungeness crab, wild Pacific prawns, avocado, baby tomatoes, bacon, bleu, and nicoise olives with louis emulsion.
+	Soups and Gumbos
+		Dish: Utensils
+		Price: $0.00
+		Dish: True French Onion Soup Lyonnaise
+		Price: $11.00
+		Description: Comes with cave aged Gruyere. Rich meat and dark chicken stock with red vin, cave aged Gruyere, crostini, sweet onion confit.
+		Dish: Cup Fried Chicken Gumbo with Housemade Andouille
+		Price: $12.00
+		Description: Dark spicy roux, housemade andouille, creole rice.
+		Dish: Cup Seafood Gumbo
+		Price: $13.00
+		Description: Starter size. Dark spicy mahogany roux, housemade andouille, creole rice, Pacific long line fresh rock fish, patagonian prawns, crawfish.
+		Dish: Cauliflower Vichyssoise with Dungeness Crab, Chervil and White Truffle Oil
+		Price: $16.00
+		Description: Chives, creme fraiche, white pepper, trace horseradish, fresh local Dungeness crab.
+	Seafood Small Plates
+		Dish: Utensils
+		Price: $0.00
+		Dish: Savory Crawfish and Wild Shrimp Beignets
+		Price: $17.00
+		Description: Mama Lil's hot pepper chow chow jelly, louis emulsion.
+		Dish: "Sinister" Pan Seared Wild Patagonian Prawns Small Plate
+		Price: $14.00
+		Description: Sambal rouille, fried basil leaves, fried garlic.
+		Dish: Catalan-Style Patagonian Prawns
+		Price: $14.00
+		Description: Comes with palacios chorizo and tomato confit. Garlic confit, sherry, fried rosemary, smoked paprika.
+		Dish: Patagonian Prawns with Roasted Shallot Paste and Red Basil
+		Price: $14.00
+		Description: Rich shallot and roasted garlic paste, sherry-lemon nuoc cham, black pepper.
+		Dish: Patagonian Prawns Cocktail with Spicy Rockin Red Remoulade
+		Price: $14.00
+		Description: Our version of the French quarter and Parisian classic but with more sharpness and heat.
+		Dish: Dungeness Crab over Fried Green Tomatoes with a Tarragon-Chervil Ravigote
+		Price: $30.00
+		Description: In a chervil tarragon ravigote. Our homage to "crab maison" at Galatoires, the iconic French quarter restaurant on Bourbon street.
+	Curiosities and Charcuterie
+		Dish: Utensils
+		Price: $0.00
+		Dish: Grilled Jumbo Spring Asparagus Wrapped with San Daniel Prosciutto
+		Price: $17.00
+		Description: Wrapped with san daniel prosciutto. Artichoke, fennel, and arugula salad. Poached egg, basil, and broken banyuls vinaigrette.
+		Dish: Crispy Fried and Braised Carlton Farms Slab Bacon
+		Price: $16.00
+		Description: Comes with a smoky demi bordelaise. Braised for 3 hours, deep flavor, melting texture, sweet onion-parsnip soubise, crispy leeks.
+		Dish: Toulouse AR Lamb Sausage over French Green Lentils de Puy
+		Price: $16.00
+		Description: Comes with lentils de puy and butternut squash. Bacon lardons, frisee, madeira, fried rosemary, basil-parsley pistou.
+		Dish: Muscovy Duck and Kurobota Pork Terrine with Fresh Herbs
+		Price: $17.00
+		Description: Comes with fresh herbs and quatre d'Epices. For exquisite and rustic classic French charcuterie, we think this is the perfect place you could start.
+		Dish: 3 of the Worlds Finest Cheeses
+		Price: $22.00
+		Description: seasonal selection, cherry mostarda, candied pecans, cold pressed olive oil.
+	True Po' Boys, Sandwiches and the Toulouse Lunch Burger
+		Dish: Utensils
+		Price: $0.00
+		Dish: Buttermilk Fried Chicken Po' Boy
+		Price: $18.00
+		Description: Wild Wheat Bakery light french roll with lettuce, roma tomatoes, mama lils, and creole manonnaise. With Pommes Frites and Aioli.
+		Dish: Fried Patagonian Shrimp Po' Boy
+		Price: $19.00
+		Description: Wild Wheat Bakery light french roll with lettuce, roma tomatoes, mama lils, and creole manonnaise. With Pommes Frites and Aioli.
+		Dish: Blackened Long Line Local Rockfish Po' Boy
+		Price: $19.00
+		Description: Wild Wheat Bakery light french roll with lettuce, roma tomatoes, mama lils, and creole manonnaise. With Pommes Frites and Aioli.
+		Dish: Fried Long Line Pacific Rockfish Fish Po' Boy
+		Price: $19.00
+		Description: Wild Wheat Bakery light french roll with lettuce, roma tomatoes, mama lils, and creole manonnaise. With Pommes Frites and Aioli.
+		Dish: Blackened Creole Shrimp Po' Boy
+		Price: $19.00
+		Description: Wild Wheat Bakery light french roll with lettuce, roma tomatoes, mama lils, and creole manonnaise. With Pommes Frites and Aioli.
+		Dish: Fried Local Yearling Oysters and Bacon Po' Boy
+		Price: $21.00
+		Description: Wild Wheat Bakery light french roll with smoked mozzerella, lettuce, roma tomatoes, mama lils, and creole manonnaise. With Pommes Frites and Aioli.
+		Dish: Flank Steak Po' Boy
+		Price: $22.00
+		Description: Wild Wheat Bakery light french roll with lettuce, roma tomatoes, mama lils, and creole manonnaise. With Pommes Frites and Aioli.
+		Dish: Grilled Chicken Po' Boy
+		Price: $18.00
+		Description: Wild Wheat Bakery light french roll with lettuce, roma tomatoes, mama lils, and creole manonnaise. With Pommes Frites and Aioli.
+		Dish: Toulouse Mufalletta with Proscitto, Coppa, Mortadella and Smoked Mozarella
+		Price: $19.00
+		Description: Hot coppa, mortadella, soppresatta, smoked mozarella, spicy olive-pepper relish, fresh herbs mayonnaise.
+		Dish: Prosciutto and Hot Coppa Sandwich with Smoked Mozarella
+		Price: $19.00
+		Description: Roma tomatoes, red onions, fresh herbs mayonnaise with pommes frites and aioli.
+		Dish: Smoked Mozarella and Basil "Caprese" Sandwich
+		Price: $16.00
+		Description: Arugula, basil, roma tomatoes, red onion, herb mayo.
+		Dish: Grilled Chicken Club with Bacon and Avocado Sandwich
+		Price: $19.00
+		Description: Caramelized onions, provolone, lettuce, tomato, and herb aioli.
+		Dish: Croque Madame with Mornay and Two Poached Eggs
+		Price: $21.00
+		Description: Carlton farms kurobota ham, gruyere, dijon mustard, mornay, 2 poached eggs.
+		Dish: Crisp and Velvety Croque Monsieur with Mornay
+		Price: $19.00
+		Description: Carlton farms kurobota ham, gruyere, Dijon mustard, mornay. With Pommes Frites and Aioli
+		Dish: Applewood Smoked B.L.T. with Avocado Sandwich
+		Price: $18.00
+		Description: Fresh herb aioli, rustic Macrina bakery country bread.
+		Dish: Toulouse Breakfast Sandwich with Applewood Bacon and Avocado
+		Price: $19.00
+		Description: Fried egg, applewood smoked bacon, avocado, lettuce, roma tomatoes, red onion, fresh herbs mayo, Macrina Bakery rustic bread. Served with breakfast potatoes.
+		Dish: Lunch Lamb Burger
+		Price: $20.00
+		Description: Anderson ranches lamb, macrina bakery potato bun, laurel chevre, grilled sweet onions salad accompaniment.
+		Dish: Toulouse Lunch Beef Burger
+		Price: $20.00
+		Description: Ranches naturally raised beef, macrina bakery potato bun, grilled sweet onions salad accompaniment.
+	Housemade Ricotta Gnocchi and Pasta Mains
+		Dish: Utensils
+		Price: $0.00
+		Dish: AR Lamb Sausage Rigatoni in a Spicy Romesco Rosa
+		Price: $26.00
+		Description: Contains ground almonds, artichokes, english peas, heirloom tomatoes, parsley, Grana Padano.
+		Dish: Toulouse Lamb, Beef and Kurobota Pork Bolognese
+		Price: $24.00
+		Description: Comes with tagliatelle and grana padano. Anderson ranch lamb, RR ranches naturally raised grass fed beef, carlton farms kurobota pork shoulder, tomato confit, tagliatelle, and Grana Padano.
+		Dish: Kurobota Garlic Sausage, Artichokes, English Pea and Heirloom Tomatoes in Bright Tomato Sauce
+		Price: $24.00
+		Description: Comes with fresh summer herbs. Heirloom and roma tomatoes, evo, parsley, basil, garlic, english peas when in season.
+		Dish: Toulouse Garlic Fennel
+		Price: $23.00
+		Description: crescenza and grana padano with tagliatelle, olorosso sherry, basil, parsley. Kurobota Sausage, English Peas and Oyster Mushrooms with Tagliaelle and Red Basil
+		Dish: Creole Gulf Prawns and Housemade Tasso Linguine
+		Price: $26.00
+		Description: Comes with tomato confit and red basil. Tomato confit, paprika, red basil, tarragon, cayenne.
+		Dish: Toulouse Lamb, Beef and Kurobota Pork Bolognese with Ricotta Gnocchi
+		Price: $27.00
+		Description: Anderson ranch lamb, RR ranches naturally raised grass fed beef, carlton farms kurobota pork shoulder, tomato confit, tagliatelle, and Grana Padano.
+		Dish: Oyster Mushrooms, Yellow Corn and San Daniel Prosciutto with Ricotta Gnocchi and Fried Sage
+		Price: $26.00
+		Description: Grana Padano, parsley, oloroso sherry.
+	Seafood Mains
+		Dish: Utensils
+		Price: $0.00
+		Dish: Big Easy Jambalaya
+		Price: $26.00
+		Description: The real deal, deep creole flavors, unapologetically spicy; wild patagonian prawns, chicken, housemade andouille and tasso.
+		Dish: Toulouse Seafood Gumbo Entree
+		Price: $26.00
+		Description: Rich housemade shrimp stock, dark mahogany roux, crawfish, patagnonian shrimp, pacific rock fish, housemade andouille. Served with creole rice.
+		Dish: 'Lucy' Wild Prawns, Housemade Andoouile and Crawfish
+		Price: $26.00
+		Description: Over red mill corn grits. Paprika, thyme, garlic, black pepper, parsley. Pp
+		Dish: BBQ Shrimp New Orleans over Red Mill Corn Grits
+		Price: $26.00
+		Description: Paprika, cayenne, garlic, rainier lager. Deep creole flavors in the classic French quarter style.
+		Dish: Blackened Long Line Fresh Rockfish with Crawfish Tasso Sauce and Tomato Confit
+		Price: $26.00
+		Description: Comes with a creole crawfish-tasso sauce. Over red mill creamy corn grits.
+		Dish: Classic Gulf Shrimp Creole
+		Price: $26.00
+		Description: Comes with patagonian prawns over corn grits. Housemade shrimp stock, holy trinity, paprika, tomatoes, cayenne, creole rice, parsley.
+		Dish: Creole Gulf Prawn and Housemade Tasso Linguine
+		Price: $26.00
+		Description: Comes with red basil and tomato confit. Garlic confit, red basil, parsley, creole spices, tasso, and Grana Padano.
+	Steaks and Meats from Local Ranches and Farms
+		Dish: Utensils
+		Price: $0.00
+		Dish: Acadiana Meatloaf with Black Pepper Tasso Gravy
+		Price: $24.00
+		Description: Ultra-premium ingredients, RR ranches natural beef and housemade andouille with our tasso black pepper gravy and pureed yukon gold potatoes. Served with mini buttermilk biscuits.
+		Dish: Anderson Ranch Grilled Lamb Leg Chimichurri over French Green Lentils de Puy with Butternut Squash
+		Price: $32.00
+		Description: 10 oz. Over lentils de puy with butternut squash. Our fave rustic grilled lamb to go with a fabulous red wine and will not be one single, uniform chop.
+		Dish: Snake River Farms Kurobota Pork Chop with Brussels Sprouts, Cippolinis and Bacon Lardons
+		Price: $25.00
+		Description: In agave marinade with Brussels sprouts. Agave-coffee-guajillo marinade, bacon lardons, fried leeks.
+		Dish: 9 oz. St. Helens Rib Eye Steak Frites
+		Price: $37.00
+		Description: St. Helens naturally raised beef from Washington ranches. Smoky demi, pommes frites with aioli, maitre d hotel butter with pommes frites and aioli.
+		Dish: 9 oz. Blackened St. Helens Rib Eye
+		Price: $39.00
+		Description: St. Helens naturally raised, grass fed beef from local Washtington ranches. Stilton Bleu, creole seasoning, smoky demi, pureed yukon gold potatoes.
+		Dish: 8 oz. SRF Wagyu Sirloin with Crawfish-Tasso Sauce
+		Price: $47.00
+		Description: Locally raised wagyu from snake river farms. Looks like a filet, deep flavor with pureed yukon gold potatoes.
+		Dish: 'Delmonico' New York Steak au Poivre 14oz
+		Price: $55.00
+		Description: Green peppercorn and shallot demi. RR ranches naturally raised beef from Okanogan with pureed yukon gold potatoes.
+		Dish: 8 oz. Center Cut Filet Marchand du Vin
+		Price: $61.00
+		Description: Comes with morel mushrooms and tasso demi. RR ranches naturally raised beef from Okanogan with pureed yukon gold potatoes.
+		Dish: 8 oz. Center Cut Filet "Oscar"
+		Price: $70.00
+		Description: RR ranches naturally raised beef from Okanogan. Dungeness crab in fines herbes with jumbo asparagus and pureed yukon gold potatoes.
+		Dish: 8 oz. Snake River Farms Wagyu "Baseball Cut" Top Sirloin
+		Price: $32.00
+		Description: Locally raised wagyu from Snake River Farms. Looks like a filet, deep flavor with maitre d'hotel butter and our rich, smoky shallot bordelaise. Choice of pureed yukon gold potatoes or pommes frites with aioli.
+		Dish: 'Delmonico' New York Strip 14oz
+		Price: $49.00
+		Description: 28 days dry aged with maitre d'hotel butter and our rich, smoky shallot bordelaise. Choice of pureed yukon gold potatoes or pommes frites with aioli.
+		Dish: 16 oz. Okanogan RR Ranch "Lagniappe" Frenched Bone In Rib Eye
+		Price: $57.00
+		Description: RR ranches naturally raised beef from Okanogan with maitre d'hotel butter and our rich, smoky shallot bordelaise. Choice of pureed yukon gold potatoes or pommes frites with aioli.
+		Dish: 8 oz. Okanogan RR Ranch Center Cut Filet Mignon
+		Price: $53.00
+		Description: RR ranches naturally raised beef from Okanogan with maitre d'hotel butter and our rich, smoky shallot bordelaise. Choice of pureed yukon gold potatoes or pommes frites with aioli.
+	Sides
+		Dish: Utensils
+		Price: $0.00
+		Dish: Pommes Frites with Aioli
+		Price: $7.00
+		Description: Perfect frites with housmade aioli.
+		Dish: Toulouse Pureed Potatoes
+		Price: $7.00
+		Description: Yukon gold potatoes with butter, cream and salt.
+		Dish: Side Fried Green Tomatoes with Fine Herbes Ravigote
+		Price: $10.00
+		Description: Comes with our creole fines herbes ravigote with chervil, tarragon, cornichons and capers.
+		Dish: Creamy Corn Grits
+		Price: $7.00
+		Description: Red Mill natural corn grits with cave aged Gruyere and Grana Padano.
+		Dish: Grilled Jumbo Spring Asparagus with Warm Black Vinaigrette
+		Price: $11.00
+		Description: Jumbo super premium tender trimmed asparagus in a warm black soy viniagrette.
+		Dish: Tender Haricot Verts with Housemade Tasso
+		Price: $11.00
+		Description: Tender French green beans with smoky housemade tasso, shallots, thyme, tomato confit and cippollinis.
+		Dish: Brussels Sprouts with Smoky Housemade Tasso
+		Price: $11.00
+		Description: Grain mustard, shallots, garlic, thyme.
+		Dish: Side of Creole Basmati Rice
+		Price: $6.00
+		Description: Basmati long grain premium rice with paprika and creole spices.
+
+Restaurant: Citizen
+Rating: 4.0
+Menu:
+	Salads
+		Dish: Citizen Salad
+		Price: $6.95
+		Description: greens, tomato, cucumber, goat cheese, & homemade croutons. drizzled with balsamic dressing
+		Dish: Cranberry Blue Salad
+		Description: greens, candied walnuts, blue cheese crumbles, cranberries & tomatoes in a homemade blue cheese vinaigrette. add a side citizen or cranberry blue cheese salad to your sandwich or crepe $3.95
+	Sandwiches
+		Dish: Citizen Sandwich
+		Price: $8.95
+		Description: juicy house roasted pork covered with caramelized onions, house seasoned aioli, pickled jalapeños & cilantro. served on a warm baguette with chips
+		Dish: Bbq Pulled Pork
+		Price: $8.95
+		Description: smothered in homemade bbq sauce, caramelized onions & crème fraiche. served on a warm baguette with chips
+		Dish: Vietnamese Style
+		Price: $5.95
+		Description: cilantro, jalapeños, cucumber, vietnamese mayo & pickled veggies with your choice of chicken, bbq pork or spicy tofu. served on french style bread
+		Dish: Grilled Cheese
+		Price: $7.95
+		Description: havarti, sharp white cheddar & tomato. grilled on como bread & served with chips
+		Dish: Reuben
+		Price: $8.95
+		Description: tender pastrami, homemade kraut, gruyère, mustard & pepper mayo. grilled on rye bread & served with chips
+		Dish: Turkey Raspberry
+		Description: tomato, caramelized onions, avocado, raspberry jam, brie cheese, & pepper mayo. grilled on como bread & served with chips. make it a turkey club
+		Dish: Turkey Pesto
+		Price: $8.95
+		Description: with spinach, havarti cheese, fresh & sun dried tomato & pepper mayo. grilled on como bread & served with chips
+		Dish: B.l.a.t.
+		Price: $8.95
+		Description: bacon, lettuce, avocado, tomato & pepper mayo. drizzled with balsamic dressing & grilled on como bread. served with chips
+	Savory Crpes
+		Dish: Citizen Crpe
+		Price: $8.95
+		Description: avocado, caramelized onions, roasted asparagus, apple smoked bacon, spinach & goat cheese. topped with our homemade crème fraiche
+		Dish: Apple Smoke Bacon
+		Price: $7.95
+		Description: sharp white cheddar & basil. drizzled with maple syrup
+		Dish: Black Forest Ham
+		Price: $7.95
+		Description: gruyère, tomato & arugula. topped with homemade crème fraiche
+		Dish: Turkey
+		Price: $8.95
+		Description: with rasberry jam, apple smoked bacon, carmelized onions & brie. topped with homemade crème fraich
+		Dish: Pesto
+		Price: $8.95
+		Description: choice of goat cheese or sharp white cheddar, sun dried tomatoes, arugula, avocado & pine nuts. topped with our homemade crème fraiche & pesto
+		Dish: Sauteed Mushroom
+	Sweet
+		Dish: Strawberry Rhubarb
+		Price: $8.95
+		Description: compote with lemon yogurt sauce. topped with powdered sugar & whipped cream
+		Dish: Caramel Pear
+		Price: $8.95
+		Description: fresh sliced pears, caramelized apples & bruleed sugar. topped with powdered sugar, whipped cream & our housemade caramel sauce
+		Dish: Nutella
+		Price: $7.95
+		Description: banana & fresh whipped cream. topped with powdered sugar & whipped cream
+		Dish: Gelato - Vanilla, Chocolate
+		Price: $1.25
+		Description: make it affogato, or add housemade caramel or chocolate ganache
+
+Restaurant: Stone Korean Restaurant
+Rating: 4.0
+Menu:
+	Appetizers
+		Dish: Gyoza
+		Price: $13.00
+		Description: 10 pieces. Pork and vegetable pots tickers. Served with soy dipping sauce.
+		Dish: Kimchi Pancake
+		Price: $20.00
+		Description: Pan-fried kimchi pancake with soy dipping sauce.
+		Dish: Seafood Pancake
+		Price: $20.00
+		Description: Pan-fried seafood baby shrimp, baby octopus, and calamari squid pancake with green onions. Served with soy dipping sauce.
+		Dish: Veggie Pancake
+		Price: $20.00
+		Description: Pan-fried veggies green and white onions, carrot, and bell pepper pancake with soy dipping sauce.
+		Dish: Gyeran Jjim
+		Price: $13.00
+		Description: Steamed egg. Battered egg, steamed with chopped green onions.
+		Dish: Dduhk Bohk Ghi
+		Price: $17.00
+		Description: Fresh rice cake and veggies, boiled and braised in sweet Korean chili sauce.
+		Dish: Japchae
+		Price: $21.00
+		Description: Korean potato starch noodles, stir-fried with veggies and beef, seasoned in soy sauce.
+		Dish: Chicken Wings
+		Price: $18.00
+		Description: 8 pieces. Seasoned chicken wings deep-fried in soybean oil. Spicy.
+	Soft Tofu Soups
+		Dish: Seafood Tofu Soup
+		Price: $19.00
+		Dish: Kimchi Tofu Soup
+		Price: $19.00
+		Dish: Kimchi Pork Tofu Soup
+		Price: $19.00
+		Dish: Pork Tofu Soup
+		Price: $19.00
+		Dish: Combo Tofu Soup
+		Price: $19.00
+		Dish: Kimchi Beef Tofu Soup
+		Price: $19.00
+		Dish: Beef Tofu Soup
+		Price: $19.00
+		Dish: Beef Tofu Soup
+		Price: $19.00
+	Soup and Stew
+		Dish: Yuk Gae Jang
+		Price: $21.00
+		Description: Spicy beef brisket and vegetable soup. Served with rice and side dishes.
+		Dish: Kimchi Jhi-Gae
+		Price: $19.00
+		Description: Kimchi stew with onions and medium firm tofu. Served with rice and side dishes.
+		Dish: Dwaen Jahng Jhi Gae
+		Price: $19.00
+		Description: Soybean soup. Fermented soybean stew with beef, clam, and veggies.
+		Dish: Seafood Udon Soup
+		Price: $19.00
+		Description: Shrimp, clam, squid, udon noodles, and assorted veggies.
+	Bibimbaps
+		Dish: Bibimbap
+		Price: $20.00
+		Description: Beef, carrots, shiitake mushrooms, zucchini, bean sprouts, and spinach. Topped with a yolk of an egg. served in a sizzling hot stone pot. served with rice and side dishes.
+	BBQ
+		Dish: Kalbi
+		Price: $36.00
+		Description: Korean BBQ beef short ribs with kalbi sauce. Served with sizzling rice and side dishes.
+		Dish: Spicy Pork Bulgogi
+		Price: $33.00
+		Dish: Spicy Chicken Bulgogi
+		Price: $33.00
+		Description: Korean BBQ chicken slices marinated in spicy bulgogi sauce. Served with rice and side dishes.
+		Dish: Bulgogi
+		Price: $33.00
+		Description: Korean BBQ ribeye marinated in bulgogi sauce. Served with rice and side dishes.
+		Dish: Chicken Bulgogi
+		Price: $33.00
+		Description: Korean BBQ chicken slices marinated in bulgogi sauce. Served with rice and side dishes.
+	Fried Chicken
+		Dish: Fried Chicken
+		Price: $31.00
+		Description: Whole fried chicken cut into 12 pieces with batter. Served with a side of pickled radishes.
+		Dish: Marinated Chicken
+		Price: $34.00
+		Description: Fried hot wings tossed in a spicy, sweet garlic sauce. Served with a side of pickled radishes.
+		Dish: 1/2 Fried 1/2 Marinated
+		Price: $36.00
+		Description: Whole fried chicken cut into 12 pieces, half fried and half marinated. Served with a side of pickled radishes.
+		Dish: Chicken Wings
+		Price: $26.00
+		Description: Fried hot wings, 12 pieces. Served with a side of pickled radishes. Spicy.
+		Dish: Chili Marinated Hot Wings
+		Price: $27.00
+		Description: Fried hot wings tossed in a spicy, sweet garlic sauce. Served with a side of pickled radishes. Spicy.
+	Combo Specials
+		Dish: Bulgogi and Bibimbap
+		Price: $33.00
+		Dish: Kalbi and Bibimbap
+		Price: $33.00
+		Description: Served with rice and side dishes.
+		Dish: Bulgogi and Soft Tofu Soup
+		Price: $33.00
+		Description: Comes with rice. Served with rice and side dishes.
+		Dish: Chicken Bulgogi and Soft Tofu Soup
+		Price: $33.00
+		Description: Comes with rice. Served with rice and side dishes.
+		Dish: Kalbi and Soft Tofu Soup
+		Price: $33.00
+		Description: Served with rice and side dishes.
+		Dish: Chicken Bulgogi and Cold Bibimbap
+		Price: $29.00
+		Description: Served with rice and side dishes.
+		Dish: Spicy Pork Bulgogi and Bibimbap
+		Price: $33.00
+		Description: Served with rice and side dishes. Spicy.
+		Dish: Soft Tofu Soup and Bibimbap
+		Price: $29.00
+		Description: Served with a sizzling rice and side dishes.
+		Dish: Spicy Pork Bulgogi and Soft Tofu Soup
+		Price: $33.00
+		Description: Comes with rice. Served with rice and side dishes.
+		Dish: Spicy Chicken Bulgogi and Soft Tofu Soup
+		Price: $33.00
+		Description: Comes with rice. Served with rice and side dishes.
+	Fried Rice
+		Dish: Kimchi Fried Rice
+		Price: $19.00
+		Description: Stir-fried rice with kimchi and veggies. Served with side dishes.
+		Dish: Veggie Fried Rice
+		Price: $19.00
+		Description: Stir fried rice with an assortment of veggies. Served with side dishes.
+	Sauteed Dishes
+		Dish: Spicy Sauteed Squid
+		Price: $25.00
+		Description: Sauteed squid and vegetables with spicy sauce. Served with a sizzling hot stone pot rice and side dishes. Spicy.
+		Dish: Chicken Stir Fried Vegetables
+		Price: $21.00
+		Description: Sauteed chicken and vegetables with sauce. Served with a sizzling hot stone pot rice and side dishes.
+		Dish: Shrimp Stir Fried Vegetables
+		Price: $21.00
+		Description: Sauteed shrimp and vegetables with sauce. Served with a sizzling hot stone pot rice and side dishes.
+		Dish: Stir Fried Vegetables
+		Price: $19.00
+		Description: Sauteed vegetables with sauce. Served with a sizzling hot stone pot rice and side dishes.
+	Cold Noodles
+		Dish: Chik Naeng Myun
+		Price: $21.00
+		Description: Cold arrowroot noodles and chili sauce in beef broth soup. Served with side dishes.
+		Dish: Bi Bim Naeng Myun
+		Price: $20.00
+		Description: Cold buckwheat noodles with chili sauce no broth. Served with side dishes.
+		Dish: Mul Naeng Myun
+		Price: $20.00
+		Description: Cold buckwheat noodles in beef broth soup. Served with side dishes.
+	Sides
+		Dish: Side of Rice
+		Price: $3.00
+	BBQ Lunch
+		Dish: Spicy Pork Bulgogi BBQ Lunch
+		Price: $21.00
+		Description: Korean BBQ pork loin marinated in spicy bulgogi sauce. Served with sizzling hot stone pot rice and side dishes.
+		Dish: Spicy Chicken Bulgogi BBQ Lunch
+		Price: $21.00
+		Description: Korean BBQ chicken slices marinated in spicy bulgogi sauce. Served with sizzling hot stone pot rice and side dishes.
+		Dish: Chicken Bulgogi BBQ Lunch
+		Price: $21.00
+		Description: Korean BBQ chicken slices marinated in bulgogi sauce. Served with sizzling hot stone pot rice and side dishes.
+		Dish: Bulgogi BBQ Lunch
+		Price: $21.00
+		Description: Korean BBQ ribeye marinated in bulgogi sauce. Served with sizzling hot stone pot rice and side dishes.
+
+Restaurant: Tanoor
+Rating: 4.5
+Menu:
+	Plates
+		Dish: Alarabi Special Plate
+		Price: $18.99
+		Description: Only at tandoor. Sliced bread stuffed with shawarma. Served with hummus and salad. Beef or chicken.
+		Dish: Falafel Plate
+		Price: $14.99
+		Description: Served with hummus, salad and bread.
+		Dish: Shawarma Chicken Hummus Plate
+		Price: $18.49
+		Description: Your will love the taste of hummus and shawarma.
+		Dish: Beef Burger Meal Plate
+		Price: $13.49
+		Description: Burger, fries and soda. Served with tomato and cheese.
+	Breakfast
+		Dish: Lentil Soup
+		Price: $8.49
+	Side and Wraps
+		Dish: Beef Kabob Sandwich
+		Price: $9.99
+		Description: Beef, served with onions and salad wrapped with our dally bread.
+		Dish: Chicken Kabob Sandwich
+		Price: $9.99
+		Description: Chicken kabob served with garlic sauce and salad wrapped with our daily bread.
+		Dish: Baba Ganoush
+		Price: $6.49
+	Drinks
+		Dish: Hot Tea
+		Price: $3.99
+		Dish: Coffee
+		Price: $4.49
+
+Restaurant: El Mezcalito
+Rating: 4.0
+Menu:
+	Main
+		Dish: Tortilla Chips and Guacamole
+		Description: Fried to order with either guacamole or refried pinto beans.
+		Dish: Tacos Carne Asada
+		Description: Sliced beef served on a corn tortilla, with onions, cilantro and salsa roja.
+		Dish: Tacos al Pastor
+		Description: Barbequed pork in corn tortillas, pico de gallo and salsa verde.
+		Dish: Memelitas
+		Description: Fresh tortillas topped with pork gravy, black beans, Oaxaqueño cheese, guacamole and salsa.
+		Dish: Tamales de Rajas o Salsa Perde
+		Description: Tamales with salsa verde or rajas, pork or chicken. Served with rice and beans.
+		Dish: Enfrijoladas
+		Description: ortillas smothered in black bean sauce, topped with onions, lettuce, crema Mexicana and Oaxaqueño cheese. Served with a thinly sliced steak.
+		Dish: Entomatadas Perdes
+		Description: Tasajo (grilled, thinly sliced beef) with homemade tortillas in tomatillo sauce, Oaxaqueño cheese, onions and crema Mexicana.
+		Dish: Sopa de Pollo con Perduras
+		Description: Whole chicken soup with chopped vegetables. Served with tortillas.
+
+Restaurant: Tyger Tyger
+Rating: 4.0
+Menu:
+	DUMPLINGS AND BUNS
+		Dish: PRAWN & CHIVE DUMPLINGS
+		Price: $17.25
+		Description: 10 hand-rolled pork dumplings in an aromatic black vinegar chili oil
+		Dish: CHICKEN & SHITTAKE DUMPLINGS
+		Price: $17.25
+		Dish: VEGGIE DUMPLINGS
+		Price: $17.25
+		Dish: PORK & TOBIKO DUMPLINGS
+		Price: $17.25
+		Dish: BELLY BUNS
+		Price: $11.50
+		Dish: HONEY WALNUT BUNS
+		Price: $11.50
+	NOODLES & RICE
+		Dish: DAN DAN MIAN
+		Price: $17.25
+		Description: wheat noodle with hot numbing sauce, toped with pork. Vegan option made with "Beyond Meat" substitute and a mushroom stock sauce base.
+		Dish: VEGAN DAN DAN
+		Price: $17.25
+		Dish: RICE
+		Price: $3.45
+		Description: blend of sprouted brown rice and white rice
+		Dish: CRAB FRIED RICE
+		Price: $26.45
+		Description: soft-shell crab, summer corn, lotus root, mushroom, green onions
+		Dish: GARLIC FRIED RICE
+		Price: $18.40
+		Description: chicken, garlic oil, fried garlic, garlic chili confit, green onion, egg
+		Dish: TYGER FRIED RICE
+		Price: $18.40
+		Description: maitake mushroom, lotus root, egg, house-made chinese bacon
+	POULTRY MEAT & FISH
+		Dish: RIBS, BABY BACK
+		Price: $27.60
+		Description: braised pork spare ribs in a sweet and spicy sauce with pickled fresno's served on a bed of choy sum
+		Dish: BEEF, YUNNAN
+		Price: $26.45
+		Description: thin slice beef, mint, water chestnut, lotus root, choy sum, chili peppercorn
+		Dish: DUCK, SWEET & SPICY
+		Price: $33.35
+		Description: 1/2 a duck deboned with maitake mushroom and yuchoy topped with a sweet and. spicy mother duck sauce. with 6 steamed buns
+		Dish: ROCKFISH WITH SOUR MUSTARD GREENS
+		Price: $21.85
+		Description: alaskan rockfish, pickled mustard greens, and cabbage in sichaun chili oil
+		Dish: PORK, THRICE COOKED
+		Price: $20.70
+		Description: thin-sliced pork belly, leek, celery, red pepper, black bean and douban jiang
+		Dish: CHICKEN, MALA
+		Price: $19.55
+		Description: boneless chicken, red sichuan peppercorn, chili, garlic, green onions
+		Dish: GUNG BAO
+		Price: $19.55
+		Description: sichuan peppercorn, chili, peanuts, scallion
+		Dish: WINGS
+		Price: $18.40
+	VEGETABLES & TOFU
+		Dish: GREENS
+		Price: $14.95
+		Description: seasonal
+		Dish: SALT & SICHUAN PEPPER TOFU
+		Price: $19.55
+		Description: fried tofu with chilies, ginger, garlic, scallion, and chili-oil black vinegar dip
+		Dish: CAULIFLOWER DRY POT
+		Price: $19.55
+		Description: potato, choy sum, celery, leek, fennel, cumin
+		Dish: BRUSSEL SPROUTS
+		Price: $16.10
+		Description: brussel sprouts, chinese sausage, wok seared with ginger, garlic, sichuan peppercorn
+		Dish: SILKEN TOFU
+		Price: $19.55
+		Description: locally pulled tofu with a garlic and mushroom glaze topped with peanuts and scallion
+		Dish: GREEN BEANS
+		Price: $16.10
+		Description: fried green beans in a sweet and spicy black vinegar sauce
+	DESSERT
+		Dish: PANNA COTTA
+		Price: $18.40
+
+Restaurant: The Masonry
+Rating: 4.0
+Menu:
+	Pizzas
+		Dish: Speck and Watercress
+		Dish: Margherita
+		Dish: Mushroom
+		Dish: Sausage
+		Dish: Spring Onion
+		Dish: Salami and Spinach
+		Dish: Pesto Pizza
+	Salad & Soup
+		Dish: Ceasar
+		Dish: Garden Salad
+		Dish: Asparagus Ribbon
+	Other Stuff
+		Dish: Taylor Shellfish Clams and Beer
+		Dish: House Baked Focaccia
+		Dish: Fried Squash Blossom in an Orlison Lager Batter
+		Dish: Yam Gnocchi Carbonara
+		Dish: House Pickled Vegetables
+		Dish: Meatballs
+		Dish: Roasted Asparagus
+		Dish: Roasted Carrot
+	Sweet
+		Dish: Vanilla Lavender Panna Cotta
+		Description: with Orange Caramel and Strawberry Compote
+		Dish: Blackberry Molten Chocolate Cake
+		Description: with Bourbon Vanilla Whipped Cream
+
+Restaurant: Betty
+Rating: 4.0
+Menu:
+	Soup & Salads
+		Dish: Soup Du Jour
+		Price: $8.00
+		Dish: Tuscan Kale Salad
+		Price: $12.00
+		Description: with pomegranate & parmesan vianaigrette
+		Dish: Organic Mixed Greens Salad
+		Price: $9.00
+		Description: with herbal vinaigrette & parmesan
+		Dish: Butterhead Lettuce & Pear Salad
+		Price: $12.00
+		Description: with toasted hazelnuts & manchego cheese
+	Shared Items
+		Dish: Cured Meat Plate
+		Price: $12.00
+		Description: with marcona almonds and marinated olives
+		Dish: Oysters on the Half Shell*
+		Dish: Fried Cauliflower
+		Price: $11.00
+		Description: with salsa verde & pine nuts
+		Dish: Cheese Plate
+		Price: $12.00
+		Description: with rosemary-semolina crackers, seasonal fruit, & house preserves
+		Dish: Fried Green Tomatoes
+		Price: $13.00
+		Description: with fresh mozzarella & house red tomato jam
+	Entres
+		Dish: Ribeye Steak with Frites*
+		Price: $28.00
+		Dish: Fish Du Jour*
+		Dish: Slow Braised Lamb Shank
+		Price: $19.00
+		Description: with creamy polenta & gremolata
+		Dish: Saffron & Leek Risotto Cakes
+		Price: $18.00
+		Description: with fall succotash & arugula pesto
+		Dish: Oven Roasted Chicken
+		Price: $19.00
+		Description: with seasonal vegetable, fingerlings, & roasted garlic
+		Dish: Kassler Pork Chop*
+		Price: $18.00
+		Description: with knackwurst, riesling braised sauerkraut, & fingerling potatoes
+		Dish: The Betty Burger*
+		Price: $15.00
+		Description: with white cheddar cheese & frites
+
+Restaurant: Big Max Burger
+Rating: 4.0
+Menu:
+	Big Max Burger Boxes
+		Dish: The Thomas Box (Serves 10)
+		Description: 10 BURGERS! Burgers will be prepared with bun, meat, and cheese - condiments and toppings will be provided on the side so your guests may build their own burger. Comes with sides of lettuce, pickles, chopped red onion, caramelized onion, ketchup, and max sauce
+		Dish: The Sammy Slider Box (Serves 10)
+		Description: 20 SLIDERS! Burgers will be prepared with bun, meat, and cheese - condiments and topping will be provided on the side so your guests may build their own burger. Comes with sides of lettuce, pickles, chopped red onion, caramelized onion, ketchup, and max sauce.
+		Dish: Fry Box (Serves 5)
+		Description: Big box of fries served with ketchup or max sauce. Serves 5 or more.. but you have to share!
+		Dish: Caesar Bowl (Serves 5)
+		Description: Large family size bowl of fresh chopped romaine, served with a side of our Caesar dressing, fresh grated parmesan, and hand cut croutons!
+	Burgers and Sandwiches
+		Dish: Crispy Bristol Bay Salmon Burger
+		Description: *contains gluten*Crispy Bristol Bay Salmon burger, toasted challah bun, garlic lemon remoulade, cabbage and fennel slaw
+		Dish: The Big Max Burger
+		Description: Two beef and bacon patties, lettuce, B&B pickles, caramelized and chopped red onion, aged cheddar, house ketchup, max sauce, challah bun
+		Dish: The Thomas Burger
+		Description: Single beef and bacon patty, lettuce, B&B pickles, caramelized and chopped red onion, aged cheddar, house ketchup, max sauce, challah bun.
+		Dish: The Little Sammy Burger
+		Description: half sized beef and bacon patty, house ketchup, aged cheddar, challah slider roll. It's small but mighty!
+		Dish: The Queen Animal Burger
+		Description: Unique to Queen Anne! One beef and bacon patty, smoked bacon, frizzled onions, avocado, house bbq, lettuce, b&b pickles, caramelized and chopped red onions, smoked cheddar, max sauce, challah bun. Napkins are a necessity for this delicious and messy burger
+		Dish: Hot Mama Hen
+		Description: Buttermilk Fried Chicken, House Ranch, Ho*Spice Red Pepper Chili Sauce, Iceburg Lettuce, B&B Pickles, Challah Bun
+		Dish: Falafel Veggie Burger
+		Description: House made falafel patty topped with coriander labneh (yogurt sauce), tahini and garlic aioli, house kraut, and tumeric pickled onions. Add our fermented fresno sambal to give it a delicious burn!If you are looking for a Vegan style please select that button and it will come on a lettuce wrap with no yogurt or aioli.
+	Combos
+		Dish: Small Combo (12 oz drink and SMALL fry)
+		Description: Small fountain drink and small fry to add to any order
+		Dish: Large Combo (16 oz drink and LARGE fry)
+		Description: Large fry and large fountain drink
+	Fries, Salad & Other Snacks
+		Dish: Small Fry
+		Description: 4 oz of our famous herb salt seasoned shoestring style fries. Comes with your choice of Ketchup or Max Sauce. Please note, our herb salt contains malt vinegar powder. Option for just salted or naked are available upon request.
+		Dish: Large Fry
+		Description: 7.5 oz of our famous herb salt seasoned shoestring style fries. Comes with your choice of Ketchup or Max Sauce. Please note, our herb salt contains malt vinegar powder. Option for just salted or naked are available upon request.
+		Dish: Chicken Nuggets
+		Description: 6 pieces of "the best nuggets you've ever had." Served with sweet & sour sauce.
+		Dish: Caesar Salad
+		Description: Baby gem lettuce, parmesan and fried baguette with a side of zesty anchovy dressing. Vegan option available made without cheese and a special miso and caper vinaigrette
+		Dish: Homestyle Chocolate Chip Cookie
+		Description: Classic chocolate chip cookie with carmelized white chocolate, Valrhona chocolate chips and brown butter.Contains: gluten, dairy
+		Dish: Caramel Corn Brussel Sprouts
+		Description: Deep fried brussel sprouts tossed in a vegan coconut caramel and topped with crushed kettle corn. Think sweet and savory. Keep it vegan as is, or add bacon for an extra dimension.
+	Drinks
+		Dish: Small Fountain Drink (12oz)
+		Description: Fountain Coca Cola products served over pellet ice. Does life get any better?
+		Dish: Large Fountain Drink (16oz)
+		Description: Fountain Coca Cola products served over pellet ice. Does life get any better?
+		Dish: Small Milkshakes (12oz)
+		Description: 12 oz Umpqua ice cream blended smooth and creamy with milk.
+		Dish: Large Milkshake (16oz)
+		Description: 16 oz Umpqua ice cream blended smooth and creamy with milk.
+		Dish: Root Beer Float (16oz)
+		Description: Served in a 16 oz cup, 2 scoops of umpqua vanilla ice cream topped with Barq's root beer.
+
+Restaurant: The Toledo
+Rating: 4.5
+Menu:
+	Tapas
+		Dish: Tater Tots
+		Dish: Chicken Tenders
+		Description: With ranch or blue cheese dressing.
+		Dish: Spicey Street Corn
+		Description: Off the cob with cilantro, lime, cayenneand cotija cheese.
+		Dish: Roast Brussels Sprouts
+		Description: Sprouts, whiskey, candied bacon, Parmesan cheese and balsamic.
+	Soups & Salads
+		Dish: Caesar
+		Description: Spring mix, Parmesan, caesar dressing, croutons.
+		Dish: The Toledo
+		Description: Spring mix, apples, whiskey candied bacon, candied walnuts, dried cranberries, cheese crumbles and balsamic vinaigrette.
+	Plates
+		Dish: Chicken 'N Waffles
+		Description: Comes with bacon.
+		Dish: Nachos
+		Description: Chicken tinga, melted cheese, pico do gallo, jalapenos, corn, black beans, sour cream, guacamole and tortilla chips.
+		Dish: Sloppy Joe Grilled Cheese
+		Description: Spicy chorizo, cheese blend, tony paco's pickles, sourdough.
+		Dish: Toledo Dip
+		Description: Smoked beef brisket, ciabatta creamy horseradish mayo, mama lil's peppers, blue cheese.
+
+Restaurant: Sizzle&Crunch
+Rating: 4.0
+Menu:
+	Specials
+		Dish: House Pork Plate
+		Price: $17.68
+		Description: Grilled pork and braised pork belly over rice.
+		Dish: The BB Special Banh Mi
+		Price: $14.28
+		Description: Braised pork belly, grilled pork and an egg in a baguette.
+		Dish: Slurping Noodles
+		Price: $17.68
+		Description: Grilled pork, tofu and egg over rice noodles.
+	Rice Bowls
+		Dish: Grilled Chicken Rice Bowl
+		Price: $15.58
+		Dish: Beef Sirloin Steak Rice Bowl
+		Price: $16.49
+		Dish: Grilled Pork Rice Bowl
+		Price: $15.58
+		Dish: Tofu Rice Bowl
+		Price: $15.58
+		Dish: Pork Belly Rice Bowl
+		Price: $16.49
+	Banh Mi
+		Dish: Grilled Pork Banh Mi
+		Price: $12.97
+		Dish: Grilled Chicken Banh Mi
+		Price: $12.97
+		Dish: Tofu Banh Mi
+		Price: $12.97
+		Dish: Beef Sirloin Banh Mi
+		Price: $12.97
+		Dish: Pork Belly Banh Mi
+		Price: $12.97
+		Dish: Breakfast Banh Mi
+		Price: $8.97
+		Description: 3 eggs.
+	Salad Bowls
+		Dish: Grilled Chicken Salad Bowl
+		Price: $15.58
+		Dish: Grilled Pork Salad Bowl
+		Price: $15.58
+		Dish: Pork Belly Salad Bowl
+		Price: $16.49
+		Dish: Tofu Salad Bowl
+		Price: $15.58
+		Dish: Beef Sirloin Steak Salad Bowl
+		Price: $16.49
+	Vermicelli Bowl
+		Dish: Beef Sirloin Steak Vermicelli Bowl
+		Price: $16.49
+		Dish: Pork Belly Vermicelli Bowl
+		Price: $16.49
+		Dish: Tofu Vermicelli Bowl
+		Price: $15.58
+		Dish: Grilled Pork Vermicelli Bowl
+		Price: $15.58
+		Dish: Grilled Chicken Vermicelli Bowl
+		Price: $15.58
+	Craft Beverage Lab
+		Dish: Iced Coffee
+		Price: $5.99
+		Dish: Lychee Green Tea
+		Price: $4.99
+		Dish: Lychee Lemonade
+		Price: $4.99
+		Dish: Mango Green Tea
+		Price: $4.99
+		Dish: Mango Lemonade
+		Price: $4.99
+		Dish: Passion Fruit Green Tea
+		Price: $4.99
+		Dish: Passion Fruit Lemonade
+		Price: $4.99
+		Dish: Salted Caramel Coffee Oat Milk
+		Price: $6.99
+		Dish: Strawberry Lychee Green Tea
+		Price: $4.99
+		Dish: Wild Strawberry Lemonade
+		Price: $4.99
+		Dish: Strawberry Mango Green Tea
+		Price: $5.99
+		Dish: French Vanilla Coffee
+		Price: $5.99
+		Dish: Watermelon Lemonade
+		Price: $4.99
+		Dish: French Vanilla Oatmilk Latte
+		Price: $5.99
+		Dish: Salted Caremel Coffee
+		Price: $5.99
+
+Restaurant: Moon Tree Sushi And Tapas
+Rating: 4.5
+Menu:
+	Tapas Soup
+		Dish: Asari Miso Soup
+		Price: $5.00
+		Description: Manila clams, , scallion, enoki mushroom.
+		Dish: Kimchee Dumpling Soup
+		Price: $7.50
+		Description: Kelp broth, kimchi mando,onion and scallion.
+		Dish: Kingcrab Soup
+		Price: $13.00
+		Description: King crab, dashi broth, seaweed, onion, shitake mushroom.
+	Tapas Salad
+		Dish: House Salad
+		Price: $7.50
+		Description: Mixed greens, yuzu vinaigrette.
+		Dish: Beet Salad
+		Price: $10.50
+		Description: Poached beets, arugula, goat cheese and lemon vinaigrette.
+		Dish: Chinese Chicken Salad
+		Price: $13.50
+		Description: Shredded chicken, cashew nut, fried wontons with sesame dressing.
+		Dish: Sashimi Salad
+		Price: $15.50
+		Description: Assorted sashimi, mixed greens, ginger vinaigrette.
+	Tapas Meat
+		Dish: Pork Gyoza
+		Price: $8.50
+		Description: Pan fried with dipping sauce.
+		Dish: Beef Negimaki
+		Price: $15.50
+		Description: Ribeye, asparagus, enoki mushroom, with sesame seed, scallion & teriyaki sauce.
+		Dish: Asian BBQ Short Ribs
+		Price: $18.00
+		Description: Marinated beef short ribs with mixed greens.
+		Dish: Chicken Karaage
+		Price: $10.00
+		Description: Fried served with cilantro mayo.
+		Dish: Pork egg roll
+		Price: $6.00
+		Description: Deep fried pork egg rolls with sweet chili sauce
+	Tapas Vegetables
+		Dish: Spicy Edamame
+		Price: $5.00
+		Description: Sambal, sesame oil and soy sauce.
+		Dish: Shishito Peppers
+		Price: $7.50
+		Description: Peppers, oyster sauce, soy, sesame oil and crushed garlic.
+		Dish: Saute Green Bean
+		Price: $7.50
+		Description: Garlic sauce, sesame seeds.
+		Dish: Agedashi Tofu
+		Price: $7.50
+		Description: Ginger, scallion, bonito flakes, daikon with dashi broth.
+		Dish: Crispy Cauliflower
+		Price: $8.50
+		Description: Deep fried, seven spices with truffle aioli.
+		Dish: Vegetable Tempura
+		Price: $10.00
+		Description: Mixed vegetables with dashi broth. Add shrimp for an additional charge.
+		Dish: 2pc shrimp tempura
+		Price: $2.00
+		Dish: Brussel sprouts with bacon
+		Price: $7.50
+		Description: Organic B sprouts with bacon ,soy garlic sauce
+		Dish: Cucumber Kimchi
+		Price: $6.00
+		Description: Japnaese style pickled cucumber kimchi
+	Tapas Seafood
+		Dish: Geso Karaage
+		Price: $8.00
+		Description: Deep fried squid legs, chili, lime and Asian pesto.
+		Dish: Salmon Tempura
+		Price: $12.50
+		Description: Mushroom, asparagus and spicy creamy miso sauce.
+		Dish: Albacore Ceviche
+		Price: $16.00
+		Description: Seared albacore, cucumber, kaiware and crispy onion.
+		Dish: Jalapeno Hamachi
+		Price: $18.00
+		Description: Yellowtail sashimi, sliced jalapeno, ginger, scallion with yuzu ponzu & hot evoo.
+		Dish: Bluefin Tuna special
+		Price: $23.00
+		Description: Avocado, Parmesan Reggiano, arugula with truffle soy dressing.
+		Dish: Salmon carpaccio
+		Price: $17.00
+		Description: Truffle soy,cherry tomatoes,micro green
+		Dish: Hamachi kama
+		Price: $16.00
+	Sushi & Sashimi
+		Dish: Shiro Maguro
+		Price: $7.00
+		Description: Albacore.
+		Dish: Kani
+		Price: $8.00
+		Description: Snowcrab.
+		Dish: Tamago
+		Price: $4.00
+		Description: Sweet egg.
+		Dish: Unagi
+		Price: $9.00
+		Description: Fresh water eel.
+		Dish: Anago
+		Price: $8.00
+		Description: OkSea eel.
+		Dish: Hirame
+		Price: $8.00
+		Description: Halibut
+		Dish: Hotate
+		Price: $10.00
+		Description: Japanese scallops.
+		Dish: Tako
+		Price: $7.00
+		Description: Octopus.
+		Dish: Ikura
+		Price: $8.00
+		Description: Salmon roe.
+		Dish: Sake
+		Price: $6.00
+		Description: Salmon.
+		Dish: Maguro
+		Price: $7.00
+		Description: Yellowfin Tuna
+		Dish: Yellow tail
+		Price: $7.00
+		Description: Buttery mild fish.
+		Dish: Bluefine tuna
+		Price: $12.00
+		Dish: Tobiko
+		Price: $6.50
+		Description: Flying fish egg
+		Dish: Saba
+		Price: $5.00
+		Description: Mackerel
+		Dish: Amaebi
+		Price: $10.00
+		Description: Sweet shrimp
+		Dish: Toro
+		Price: $15.00
+		Description: Tuna Belly
+		Dish: King salmon
+		Price: $8.00
+		Dish: Golden eye snapper
+		Price: $8.00
+		Dish: Red snapper
+		Price: $7.00
+		Description: Tai
+		Dish: Uni
+		Price: $15.00
+		Dish: Chu Toro
+		Price: $12.00
+		Description: Medium fat Tuna
+		Dish: Kanpachi
+		Price: $7.00
+		Description: Amberjack
+		Dish: Ankimo
+		Price: $6.50
+		Description: Monk fish liver
+		Dish: Shima aji
+		Price: $10.00
+		Description: premium mackerel
+		Dish: TUNA SAMPLER
+		Price: $45.00
+		Description: 2 pc each of TORO,CHU TORO, BLUEFIN AND NEGI TORO ROLL
+		Dish: Ika
+		Price: $8.00
+		Description: squid
+	Signature Sushi Rolls
+		Dish: Baked Crab Hand Roll
+		Price: $13.00
+		Description: Snow crab, mayo, butter and soy paper.
+		Dish: Las Vegas Roll
+		Price: $14.00
+		Description: Unagi, avocado, crab mix, cream cheese inside and and deep fried.
+		Dish: Fire Dragon Roll
+		Price: $19.00
+		Description: Shrimp tempura, spicy tuna, cucumber, topped with tuna, cilantro, jalapeno & poke sauce.
+		Dish: In & Out Roll
+		Price: $18.00
+		Description: Shrimp tempura, spicy crab mix, cucumber, topped shrimp, avocado & asian pesto sauce.
+		Dish: Creamy Baked Lobster Roll
+		Price: $18.50
+		Description: California roll topped with lobster tempura & creamy eel sauce.
+		Dish: Lollipop Roll
+		Price: $16.50
+		Description: Tuna, yellowtail, salmon, avocado, asparagus, crab mix rolled in cucumber with yuzu ponzu.
+		Dish: Irish Spicy Tuna Roll
+		Price: $17.00
+		Description: California roll topped with spicy tuna ,crunch poptato, sweet chili & eel sauce.
+		Dish: Fancy Seattle Roll
+		Price: $16.00
+		Description: Crab mix, avocado & cucumber, topped with seared salmon, green onion, tobiko, spicy mayo, sweet chili & soy glaze.
+		Dish: Spicy Toro Roll
+		Price: $14.00
+		Description: Toro, scallion topped with sliced jalapeno.
+		Dish: Crispy rice
+		Price: $13.00
+		Description: 4pc crispy nigiri,topped with spicy tuna & jalapeno
+		Dish: MOONTREE ROLL
+		Price: $19.00
+		Description: Spicy tuna,avocado, cucumber topped w/yellow tail,salmon,sliced onion,jalapenos & habanero .
+		Dish: SMOKED SALMON ROLL
+		Price: $18.00
+		Description: Smoked salmon,cream cheese,avocado topped w/salmon,Japanese mint,lemon,Eel sauce,shriracha
+	Hand Rolls & Sushi Rolls
+		Dish: Spicy Tuna Roll
+		Price: $6.75
+		Dish: Spicy Scallop Roll
+		Price: $11.50
+		Description: Seafood tempura roll.
+		Dish: California Roll
+		Price: $6.75
+		Description: Cucumber, crab, and avocado.
+		Dish: Salmon Skin Roll
+		Price: $5.00
+		Dish: Eel & Avocado Roll
+		Price: $8.50
+		Dish: Shrimp Tempura Roll
+		Price: $12.00
+		Description: Seafood tempura roll.
+		Dish: Softshell Crab Sushi Roll
+		Price: $13.00
+		Description: Seaweed wrapped around rice and filling.
+		Dish: Sashimi Sampler
+		Price: $38.00
+		Description: 12 piece of chefs choice sashimi. Gluten free.
+		Dish: Nigiri Combination Roll
+		Price: $36.00
+		Description: 8 pieces of chefs choice nigiri sushi & Gluten free. Comes with spicy tuna or California roll
+		Dish: Chizashizushi Don
+		Price: $38.00
+		Description: Premium grade sashimi over sushi rice
+	Rice and Noodle
+		Dish: Poke Bowl
+		Price: $18.00
+		Description: Sushi rice, pickled daikon, cucumber with rice cracker.
+		Dish: Kimchee Fried Rice
+		Price: $16.00
+		Description: Spam, bacon, spicy miso with sunny side egg and nori.
+		Dish: Udon soup
+		Price: $14.50
+		Description: kelp broth ,fish cake w/tempura flakes
+		Dish: Unagi Don
+		Price: $22.00
+		Description: Broiled freshwater eel over warm rice
+		Dish: Bowl of rice
+		Price: $3.00
+	Weekday Lunch Specials
+		Dish: Sashimi Combo Lunch
+		Price: $21.00
+		Description: Assortment of sashimi and served with rice.
+		Dish: 6 Pieces Sushi Lunch
+		Price: $22.00
+		Description: Chef choice of 6 pieces of nigiri and a choice of spice of spicy tuna or california roll.
+		Dish: Custom Bento Box Lunch
+		Price: $20.00
+		Description: Served with rice salad.
+		Dish: Poke Bowl Lunch
+		Price: $16.50
+		Description: Tuna or salmon.
+		Dish: Chirashi Lunch
+		Price: $23.00
+		Description: Sushi bowl.
+		Dish: Premium Chirashi Lunch
+		Price: $28.00
+		Description: Sushi bowl.
+		Dish: Udon Soup Lunch
+		Price: $13.00
+		Description: Wheat noodle soup.
+		Dish: Kimchee Fried RIce Lunch
+		Price: $14.50
+		Description: Stir fried rice.
+	Lunch Salads
+		Dish: Tuna Tataki Salad Lunch
+		Price: $16.00
+		Description: Served with garlic ponzu.
+		Dish: Sashimi Salad Lunch
+		Price: $15.00
+		Description: Served with ginger dressing.
+		Dish: Chinese Chicken Salad Lunch
+		Price: $14.00
+		Description: Comes with sesame dressing.
+	Soda
+		Dish: Coke
+		Price: $2.50
+		Dish: sprite
+		Price: $2.50
+		Dish: Diet coke
+		Price: $2.50
+
+Restaurant: CÔBA
+Rating: 4.0
+Menu:
+	Small Plates
+		Dish: Prawn Fresh Rolls
+		Price: $8.00
+		Description: Vermicelli noodles, prawns, and bean sprouts wrapped in traditional rice paper. Served with house special peanut sauce
+		Dish: Tofu Fresh Rolls
+		Price: $8.00
+		Description: Vermicelli noodles, tofu, and bean sprouts wrapped in traditional rice paper. Served with house special peanut sauce
+	Banh Mi - Vietnamese Baguettes
+		Dish: Banh Mi - Grilled Chicken
+		Price: $10.00
+		Description: Traditional pickled vegetables, cucumbers, cilantro, and jalapenos, with house special sauce. Served with side of fries and pho broth. Choice of gluten-free bread or traditional French baguettes
+		Dish: Banh Mi - Grilled Pork
+		Price: $10.00
+		Description: Traditional pickled vegetables, cucumbers, cilantro, and jalapenos, with house special sauce. Served with side of fries and pho broth. Choice of gluten-free bread or traditional French baguettes
+	Bun - Vermicelli Rice Noodle
+		Dish: Vermicelli - Charred Lemongrass Pork
+		Price: $12.00
+		Description: Vietnamese noodles served with spring mix lettuce, bean sprouts, basil, cilantro, traditional pickled vegetables, sautéed bell pepper, with green beans topped with crispy shallot, and peanuts. Served with house special sauce
+		Dish: Vermicelli - Charred Chicken
+		Price: $12.00
+		Description: Vietnamese noodles served with spring mix lettuce, bean sprouts, basil, cilantro, traditional pickled vegetables, sautéed bell pepper, with green beans topped with crispy shallot, and peanuts. Served with house special sauce
+	Pho - Noodle Soup
+		Dish: Chicken Pho
+		Price: $12.00
+		Description: Chicken breast and soft-boiled egg. Served with fresh bean sprout, basil, jalapeno, and lime. Topped with onion and cilantro
+		Dish: Beef Rib Pho
+		Price: $15.00
+		Description: Short rib and steak. Served with fresh bean sprout, basil, jalapeno, and lime. Topped with onion and cilantro
+	Com - Rice Plate
+		Dish: Grilled Beef Short Rib Rice Plate
+		Price: $14.00
+		Description: White jasmine rice served with spring mix, pickle carrot daikon, pickle radish, cucumber. Served with a side of both. Served with homemade soy sauce
+		Dish: Grilled Lemongrass Pork Chop Rice Plate
+		Price: $12.00
+		Description: White jasmine rice served with spring mix, pickle carrot daikon, pickle radish, cucumber. Served with a side of both. Served with homemade soy sauce
+
+Restaurant: Sal Y Limon
+Rating: 4.5
+Menu:
+	Lunch
+		Dish: Flautas (3)
+		Price: $11.95
+		Description: Three hand made corn tortillas, filled with your choice of chicken, chorizo con papas or beef. Topped with cabbage, queso fresco, jocoque, jalapenos. Served with fresh guacamole and radishes
+		Dish: Enchiladas Verdes
+		Price: $11.95
+		Description: Two fresh hand made corn tortillas, filled with your option of cheese, chicken, or beef. Topped with green salsa, lettuce, queso cotija, jocoque and a tomato slice. Served with white rice and black beans
+	Salads
+		Dish: Ensalada Cesar
+		Price: $9.99
+		Description: With cucumbers, avocado, baby tomatoes, and red bell peppers
+		Dish: Chicken Wrap
+		Price: $13.00
+		Description: Large wheat tortilla filled with pollo asado, arugula, spinach, lettuce, black beans, onions, tomatoes, cheese, and our house chipotle dressing
+	Platos Tipicos
+		Dish: Pozole Rojo O Verde
+		Price: $12.50
+		Description: Hearty Mexican stew, with pork and hominy. Red or green salsa
+		Dish: Burrito MI Tierra
+		Price: $14.00
+		Description: Large flour or wheat tortilla filled with your choice of pastor, pollo or carne asada, whole beans, and rice. Topped with our homemade burrito salsa, pico de gallo, crema y guacamole
+	Entradas
+		Dish: Mole
+		Price: $17.00
+		Description: Fresh boneless chicken, prepared in a large clay pot, with all the ingredients, chocolate, green apples, dry chiles, exotic herb and spices. Served with rice and black beans
+		Dish: Steak a la Plancha
+		Price: $18.00
+		Description: Skirt steak with fresh onions, tomatoes, potatoes, herbs, and spices. Served with rice, beans and fresh handmade tortillas
+	Vegetarian
+		Dish: Veggie Enchiladas
+		Price: $12.95
+		Description: Two fresh corn tortillas with sauteed mushrooms, carrots, celery, green peas, and broccoli. Topped with green roasted tomatillo salsa and cheese. Served with white rice, black beans, avocado, and tomato
+		Dish: Tacos Vegetarianos
+		Price: $12.95
+		Description: Two fresh corn tortillas filled with cabbage, onion, poblano peppers, and mushrooms in our special salsa. Served with rice and beans
+
+Restaurant: GoldinBlack
+Rating: 4.5
+Menu:
+	Savory Appetizers & Tapas
+		Dish: Avocado Organic Kimchi Handrolls
+		Price: $8.95
+		Description: 2 pieces. Kimchi, avocado, cucumber, red cabbage, carrot and rice. Vegetarian.
+		Dish: Potstickers
+		Price: $8.45
+		Description: Pork with vegetable
+		Dish: Kimchi Jeon
+		Price: $14.45
+		Description: Savory korean pancakes with kimchi, zucchini, onion, carrot, jalapeno and potato. Vegetarian
+		Dish: Haemul Pajeon
+		Price: $22.95
+		Description: Korean seafood pancakes. Prawn, squid, scallop, scallion, zucchini, onion, carrot, jalapeno and egg
+		Dish: Jjinmandu (Korean Dumplings)
+		Price: $14.45
+		Description: Steamed and lightly pan-seared Korean dumplings. Fresh scallion, bell pepper, onion in garlic-soy vinaigrette. Toasted sesame seeds
+		Dish: Kabocha Squash & Organic cashew with Cinnamon
+		Price: $13.95
+		Description: Roasted kabocha squash, organic cashew with organic honey and cinnamon. It is nutritious side dish perfect for all seasons. If you are allergic to cashew, please be sure to notify (we can take off cashew)
+		Dish: Gimmari (Crispy seaweed rolls, 7pcs)
+		Price: $9.45
+		Description: Korean glass noodles stuffed in a crispy seaweed sheet. Served with chili mayo
+		Dish: Vegetable Japchae
+		Price: $13.95
+		Description: Sauteed sweet potato noodles with assorted vegetables
+	Salads
+		Dish: Organic Greens Forest Salad
+		Price: $13.95
+		Description: Organic spring greens mix, avocado, cucumber, kale, golden raisins, cashews. Korean yuzu-ginger truffle vinaigrette. Vegan. Dairy Free
+		Dish: Bibim Guksu (Medium spicy noodle salad)
+		Price: $16.45
+		Description: Romaine lettuce, cucumber, carrot, red cabbage, cilantro, green onion, sesame seeds. Special sweet and spicy sesame vinaigrette. Vegan
+		Dish: Muchim Salad
+		Price: $15.95
+		Description: Organic spring greens mix, romaine, sauted bean sprouts, tomato, red cabbage, green onion, sesame & chia seeds. Truffle yuzu-ginger or Lemon Dijon honey mustard vinaigrette
+	Entrees
+		Dish: Bibimbap Escape Dinner
+		Price: $18.95
+		Description: Served with sauteed vegetables and organic fresh spring mix, english cucumber, red cabbage and choice of protein. Spicy
+		Dish: Japchaebap Dinner
+		Price: $18.95
+		Description: Rice, sauteed sweet potato noodle with broccoli, zucchini, onion, carrot, mushroom and choice of protein, sesame oil in homemade wine garlic soy sauce
+		Dish: Tofu Dupbap
+		Price: $18.95
+		Description: Rice, sauteed kale, fresh kimchi, egg yolk, sesame oil, toasted sesame seed and choice of protein. Vegetarian and spicy
+		Dish: Spicy Pork Dupbap
+		Price: $19.45
+		Description: Rice, sauteed kale, fresh kimchi, egg yolk, sesame oil, toasted sesame seed and choice of protein. Spicy
+		Dish: Chicken Breast Bulgogi Dupbap
+		Price: $19.45
+		Description: Rice, sauteed kale, fresh kimchi, egg yolk, sesame oil, toasted sesame seed and choice of protein
+		Dish: Beef Bulgogi Dupbap
+		Price: $19.95
+		Description: Rice, sauteed kale, fresh kimchi, egg yolk, sesame oil, toasted sesame seed and choice of protein
+		Dish: Seafood Dupbap
+		Price: $19.95
+		Description: Prawns and squid, rice, sauteed kale, fresh kimchi, egg yolk, sesame oil, toasted sesame seed and choice of protein
+		Dish: Dubu-Jorim Dinner
+		Price: $17.95
+		Description: Braised tofu, marinated with special family recipe spicy doenjang (chili bean sauce). Brussels sprouts, onion, mushroom, red bell pepper, jalapeo, comes with quinoa-white rice mix or brown rice
+		Dish: Kimchi and Spicy Pork Bulgogi Dinner
+		Price: $20.95
+		Description: Spicy pork bulgogi with sauteed kimchi, zucchini, onion, kale, carrot, scallion, toasted black sesame seed. Spicy
+		Dish: Spicy Pork Bokkeumtang Dinner
+		Price: $19.95
+		Description: Bokkeum means stir fry, tang means stew in Korean, made with kabocha squash, Napa, potato, mushroom, zucchini, carrot, onion, scallion, jalapeno. Comes with rice. Spicy.
+		Dish: Dak Bokkeumtang Dinner
+		Price: $19.95
+		Description: Bokkeum means stir fry, tang means stew in Korean, made with kabocha squash, Napa, potato, mushroom, zucchini, carrot, onion, scallion, jalapeno. Comes with rice. Spicy.
+		Dish: Beef Bokkeumtang Dinner
+		Price: $19.95
+		Description: Bokkeum means stir fry, tang means stew in Korean, made with kabocha squash, Napa, potato, mushroom, zucchini, carrot, onion, scallion, jalapeno. Comes with rice. Spicy.
+		Dish: Heritage Bulgogi and Veggies Dinner
+		Price: $21.45
+		Description: Served with kale, kabocha squash, potato, broccoli, zucchini, mushroom, onion, carrot, scallions, sesame seed with choice of rice
+	GoldinBlack Signatures
+		Dish: Classic Tteobokki
+		Price: $16.45
+		Description: Korean rice cakes with assorted vegetable in special house made chili sauce, sesame seeds. Vegetarian dish
+		Dish: Gung-Jung Tteobokki (Beef in mild garlic soy sauce. No spicy)
+		Price: $19.95
+		Description: Korean soft rice cakes with beef bulgogi and assorted vegetables. Gung-jung is a mildly flavored with a homemade special garlic soy sauce
+		Dish: 2 Pieces (large) Kimchi Bulgogi Tacos
+		Price: $17.45
+		Description: Choice of protein, red cabbage, cilantro and homemade organic chili sauce on a large size flour tortilla. Little spicy
+		Dish: JjinMandu
+		Price: $14.45
+		Description: Korean vegetable dumplings with fresh scallion, garlic soy vinaigrette and black sesame seed. Vegetarian
+		Dish: Kimchi Fried Rice
+		Price: $17.95
+		Description: Stir fried rice in secret wine chili sauce with kimchi, kabocha squash, kale, potatoes, zucchini, carrot, and an fried egg on top
+		Dish: Beef Stir-Fry
+		Price: $19.95
+		Description: Stir fried rice with beef in mild homemade sauce with kabocha squash, broccoli, mushroom, carrot, potato, jalapeno, fried egg, scallion, toasted black sesame seed
+		Dish: 8 Pieces Bulgogi Avocado Rolls
+		Price: $18.95
+		Description: Choice of meat, avocado, cilantro, english cucumber, carrot, red cabbage, sesame seed, spicy aioli and wine chili sauce
+		Dish: GoldinBlack Jajang
+		Price: $19.45
+		Description: Korean style chinese dish. Garlic pork, poached egg, zucchini, brussels sprouts, kabocha squash, onion with house made black bean sauce. Comes with rice
+	Noodles and Soups
+		Dish: Kimchi Egg Ramen
+		Price: $15.95
+		Description: Spicy, flavorful noodle soup with mushroom, zucchini, onion, carrot, napa cabbage scallion
+		Dish: Mandu Egg Ramen
+		Price: $16.45
+		Description: Korean vegetable dumplings. Spicy, flavorful noodle soup with mushroom, zucchini, onion, carrot, napa cabbage scallion
+		Dish: Garlic Pork Ramen
+		Price: $16.95
+		Description: Spicy, flavorful noodle soup with mushroom, zucchini, onion, carrot, napa cabbage scallion
+		Dish: Bulgogi Ramen
+		Price: $16.95
+		Description: Spicy, flavorful noodle soup with mushroom, zucchini, onion, carrot, napa cabbage scallion. Choice of protein
+		Dish: Seafood Ramen
+		Price: $19.95
+		Description: Prawn and squid. Spicy, flavorful noodle soup with mushroom, zucchini, onion, carrot, napa cabbage scallion
+		Dish: Hot Janchi Guksu
+		Price: $17.95
+		Description: Organic kimchi, zucchini, carrot, onion, egg, scallion, gim edible seaweed, healthy and light broth. Vegetarian
+		Dish: Cold Janchi Guksu
+		Price: $17.95
+		Description: Organic kimchi, zucchini, carrot, onion, egg, scallion, gim edible seaweed, healthy and light broth. Vegetarian
+		Dish: Tteokguk
+		Price: $17.95
+		Description: Thinly sliced rice cakes soup with assorted vegetables, gim, egg, toasted black sesame in healthy and light broth
+		Dish: Manduguk
+		Price: $17.95
+		Description: Koren vegetable dumplings soup with assorted vegetables, egg, gim, toasted black sesame seed in healthy and light broth
+		Dish: Eomuktang
+		Price: $17.95
+		Description: Flavorful premium pure fish cakes soup with napa, onion, mushroom, zucchini, carrot, scallion, jalapeno, toasted black sesame in healthy and light broth
+	Sandwiches
+		Dish: Cuban Connection Sandwich
+		Price: $16.95
+		Description: Garlic marinated pork, caramelized onions, broccoli, cabbage, cilantro, jalapenos, crisp romaine lettuce, pepper jack, provolone cheese and aioli
+		Dish: Volcano Sandwich
+		Price: $17.95
+		Description: Choice of tofu, spicy pork. Chicken breast or beef bulgogi. Organic spring greens mix, fresh jalapeo, cucumber, fresh red bell pepper. Spicy aioli, pepper jack, spicy mascarpone cheese
+		Dish: Hallasan Express Sandwich
+		Price: $17.95
+		Description: Beef bulgogi or Chicken breast bulgogi, caramelized onion, sauted red bell pepper, mushroom, broccoli, fresh red cabbage. aioli, provolone cheese
+		Dish: Once in the GoldinBlack Sandwich
+		Price: $16.95
+		Description: Caramelized onions, broccoli, cabbage, cilantro, lettuce, provolone, pepper jack and spicy aioli
+	Sundubu and Kimchi Jjigae
+		Dish: Egg and Vegetable Sundubu Jjigae
+		Price: $18.45
+		Description: Spicy soft tofu stew with egg, zucchini, mushroom, onion, carrot and scallion. Comes with rice
+		Dish: Egg and Vegetable Kimchi Jjigae
+		Price: $18.45
+		Description: Spicy kimchi stew with zucchini, mushroom, onion, carrot and scallion. Comes with rice. Spicy
+		Dish: Tofu Sundubu Jjigae
+		Price: $18.45
+		Description: Spicy soft tofu stew with zucchini, mushroom, onion, carrot and scallion. Comes with rice. Spicy. Vegan
+		Dish: Tofu Kimchi Jjigae
+		Price: $18.45
+		Description: Spicy kimchi stew with zucchini, mushroom, onion, carrot and scallion. Comes with rice. Spicy
+		Dish: Garlic Pork Sundubu Jjigae
+		Price: $19.95
+		Description: Spicy soft tofu stew with garlic pork, zucchini, mushroom, onion, carrot and scallion. Comes with rice. Spicy
+		Dish: Garlic Pork Kimchi Jjigae
+		Price: $19.95
+		Description: Spicy kimchi stew with zucchini, mushroom, onion, carrot and scallion. Comes with rice. Spicy
+		Dish: Bulgogi Sundubu Jjigae
+		Price: $19.95
+		Description: Spicy soft tofu stew with choice of bulgogi, zucchini, mushroom, onion, carrot and scallion. Comes with rice. Spicy
+		Dish: Bulgogi Kimchi Jjigae
+		Price: $19.95
+		Description: Spicy kimchi stew with zucchini, mushroom, onion, carrot and scallion. Comes with rice. Spicy
+	Beverages
+		Dish: Canned Soda
+		Price: $2.90
+		Dish: San Pellegrino Soda
+		Price: $4.00
+		Dish: San Pellegrino Sparkling Water
+		Price: $4.00
+		Dish: Milkis
+		Price: $4.50
+		Description: Korean yogurt and milk soda
+		Dish: Sujeonggwa
+		Price: $4.95
+		Description: Traditional korean cinnamon ginger punch
+		Dish: Sikhye
+		Price: $4.95
+		Description: Traditional korean rice punch
+		Dish: Crushed Korean Pear Juice
+		Price: $5.00
+		Description: Korean grated drink, korean pear. Good cure for hangover
+		Dish: Crushed Korean Pear Juice
+		Price: $5.00
+		Description: Korean grated drink, Korean pear. Good Cure for Hangover.
+	Extras
+		Dish: Extra Rice
+		Price: $4.00
+		Description: Quinoa-white rice mix or brown rice
+		Dish: Side Kimchi
+		Price: $4.00
+		Dish: Toasted Ciabatta with melted cheese
+		Price: $9.95
+		Description: Large size
+
+Restaurant: Bahn Thai Restaurant
+Rating: 4.0
+Menu:
+	Special Menu
+		Dish: Sweet Fried Asian Pumpkin (Appetizer)
+		Price: $13.25
+		Description: Served with plum sauce and ground peanut on top.
+		Dish: Pumpkin Curry
+		Price: $20.95
+		Description: Traditional countryside style of cooking sweet Asian pumpkin (Kabocha) with red curry sauce, red bell peppers, and fresh basil. Choice of chicken or tofu. (At least mild spicy.) (Gluten free.)
+		Dish: Eggplant Tofu
+		Price: $20.95
+		Description: Fresh Japanese eggplants sauted with tofu, bell peppers, and fresh basil in our house sauce.
+		Dish: Avocado Prawn Curry
+		Price: $22.95
+		Description: Creamy fresh avocado simmered with green curry sauce, bell peppers, fresh basil, and prawns. (At least mild spicy.) (Gluten free.)
+		Dish: Garlic Butter Prawns
+		Price: $22.95
+		Description: The aroma of fresh garlic dish stir-fried with onions, mushrooms, broccoli, and prawns in butter sauce.
+		Dish: Pork Pad Ped
+		Price: $20.95
+		Description: Tender pork loins sauted with bell peppers, lime leaves, chili paste, baby corn, and Chinese ginger. This dish is naturally mildly spicy from the herbs and spices.
+		Dish: Stir-Fried Pumpkin
+		Price: $20.95
+		Description: Asian pumpkin sauted with fresh basil and bell peppers in our house sauce. Choice of chicken, tofu, or mixed vegetables.
+		Dish: Special Panang Salmon (Fillet)(Seasonal)
+		Price: $25.95
+		Description: Panang curry with salmon fillet, basil, and bell peppers. (Gluten free.)
+		Dish: Beef Stew with Panang Curry Sauce
+		Price: $21.95
+		Description: Tender beef with panang curry sauce, fresh basil, and bell peppers.
+		Dish: S8. Panang Salmon
+		Price: $18.95
+		Description: Seasonal. Panange curry slowly cooks with fillet salmon, basil and bell peppers.
+		Dish: Basil with Chopped Chicken Stir-Fry
+		Price: $21.95
+		Description: Chopped tender chicken stir-fried with fresh basil, onions, mushrooms, chili peppers, and bell peppers.
+		Dish: Special Green Bean Prawns
+		Price: $21.95
+		Description: Stir-fried crunchy green beans with fresh prawns in garlic sauce.
+	Appetizers
+		Dish: Chicken Satay
+		Price: $15.95
+		Description: 4 skewers. Marinated in curry powder, coconut milk, grilled and served with mild spicy peanut sauce and pickled cucumbers. (Gluten free.)
+		Dish: Blanket Prawns
+		Price: $14.95
+		Description: Prawns with cream cheese wrapped in spring roll wrappers then fried. Served with tangy plum sauce.
+		Dish: Mee Krop
+		Price: $13.95
+		Description: Crispy rice noodles with diced prawns and chicken in sweet house sauce.
+		Dish: Gyoza
+		Price: $12.95
+		Description: 7 pieces. Fried chicken and vegetables dumplings. Served with mushroom soy sauce.
+		Dish: Deep-Fried Spring Rolls
+		Price: $12.95
+		Description: 4 rolls. Mixed vegetables wrapped in spring roll wrappers and fried.
+		Dish: Prawn Fresh Roll
+		Price: $8.50
+		Description: Prawns & vegetables wrapped in rice wrappers - served with hoisin peanut sauce. For gluten-free option, please ask for original peanut sauce.
+		Dish: Tofu Fresh Roll
+		Price: $8.25
+		Description: Tofu & vegetables wrapped in rice wrappers - served with hoisin peanut sauce. For gluten-free option, please ask for original peanut sauce.
+		Dish: Deep-Fried Tofu
+		Price: $12.25
+		Description: Fried fresh tofu served with mild spicy peanut sauce.
+		Dish: Fish Cakes
+		Price: $15.25
+		Description: Fried mildly spicy fish cake mixed with green beans - served with plum sauce.
+		Dish: Crab Rangoons
+		Price: $13.95
+		Description: Crab meat with cream cheese wrapped with wonton wrappers then fried. Served with plum sauce.
+	Soups
+		Dish: Woon Sen Soup
+		Price: $17.25
+		Description: Light soup with jelly noodles, chopped chicken, mushrooms, green onions, napa cabbage, and cilantro.
+		Dish: Tom Yum Soup
+		Price: $17.25
+		Description: Hot and sour soup with mushrooms, lemongrass, lime leaves, and chili paste.
+		Dish: Tom Kar Soup
+		Price: $18.25
+		Description: Coconut milk hot and sour soup with mushrooms, lemongrass, lime leaves, and chili paste.
+	Salads
+		Dish: Stir-Fried Beef Salad
+		Price: $19.25
+		Description: Stir-fried beef with lettuce, onions, cucumbers, tomatoes, and lime juice dressing. (Gluten-free.)
+		Dish: Grilled Pork Salad
+		Price: $19.25
+		Description: Grilled marinated pork with lettuce, onions, cucumbers, tomatoes, and lime juice dressing. (Gluten-free.)
+		Dish: Bahn Thai Salad
+		Price: $19.25
+		Description: Chicken with lettuce, cucumbers, shallots, spinach, and tomatoes. Served with our famous peanut sauce dressing. (Gluten-free.)
+		Dish: Larb Gai Salad
+		Price: $19.25
+		Description: Diced chicken with lime juice dressing, ground roasted rice (for aroma), onions, and mint. (Gluten-free.)
+		Dish: Broiled Beef Salad
+		Price: $19.95
+		Description: Broiled marinated beef with lime juice dressing, onions, shallots, ground roasted rice (for aroma) and mint.
+		Dish: Prawn Salad
+		Price: $20.95
+		Description: Prawns with lime juice dressing, lemongrass, lime leaves, shallots, and mint. (Gluten-free.)
+		Dish: Seafood Salad
+		Price: $22.95
+		Description: Mixed seafood with lettuce, onions, cucumbers, tomatoes, carrots, and lime juice dressing. (Gluten-free.)
+	Noodles and Fried Rice
+		Dish: Pahd Thai Noodles
+		Price: $17.95
+		Description: Stir-fried fresh rice noodles with eggs, ground peanuts, fresh bean sprouts, with green onions and shredded carrots on top. (Gluten-free.)
+		Dish: Pahd See Iew Noodles
+		Price: $17.95
+		Description: Stir-fried fresh wide rice noodles with broccoli in sweet soybean sauce.
+		Dish: Drunken Noodles
+		Price: $17.95
+		Description: Stir-fried fresh wide rice noodles with fresh basil, bamboo strips, bell peppers, mushrooms, onions, and carrots.
+		Dish: Chicken Noodles
+		Price: $17.95
+		Description: Stir-fried fresh wide rice noodles with chicken, eggs, tomatoes, pineapples, and carrots.
+		Dish: Fried Rice
+		Price: $17.95
+		Description: Fried rice with eggs, white onions, tomatoes, pineapples, carrots, and green onions on top. (Gluten-free.)
+		Dish: Basil Fried Rice
+		Price: $18.95
+		Description: Fried rice with onions, fresh basil, and bell peppers.
+		Dish: Rad Nar Noodles
+		Price: $19.95
+		Description: Stir-fried wide rice noodles with broccoli in gravy soybean sauce.
+		Dish: Pahd Woon Sen
+		Price: $21.95
+		Description: Stir-fried thin crystal noodles with eggs, chicken, prawns, green onions, and napa cabbage. (This dish comes original with chicken and prawns).
+		Dish: Bahn Thai Fried Rice
+		Price: $20.95
+		Description: Fried rice with prawns in yellow curry powder, eggs, pineapples, onions, carrots, tomatoes, and green onions on top. (This dish comes original with prawns). (Gluten free.)
+	Curries
+		Dish: Red Curry
+		Price: $19.95
+		Description: (At least mild spicy). Red curry paste with bamboo shoots, bell peppers, basil, and coconut milk. The taste is a little saltier than green curry.
+		Dish: Green Curry
+		Price: $19.95
+		Description: (At least mild spicy). Green curry paste with bamboo shoots, bell peppers, basil, eggplants, and coconut milk. The taste is a little sweeter than red curry.
+		Dish: Kang Karee (Yellow) Curry
+		Price: $19.95
+		Description: (At least mild spicy). Yellow curry paste, potatoes, tomatoes, and coconut milk.
+		Dish: Masaman Curry
+		Price: $19.95
+		Description: (At least mild spicy). Masaman curry paste, potatoes, tomatoes, and coconut milk. (A cross between yellow curry and Panang curry).
+		Dish: Panang Curry
+		Price: $19.95
+		Description: (At least mild spicy). Panang curry paste, bell peppers, basil, lime leaves, and coconut milk. Taste is similar to red curry but the sauce is thicker and does not come with bamboo shoots.
+		Dish: Jungle Curry
+		Price: $19.95
+		Description: (At least mild spicy). Spicy curry paste with bamboo shoots, bell peppers, basil, Chinese ginger, baby corn, zucchini, and mushrooms with broth. This is the only curry that does not cook with coconut milk. Jungle curry is naturally mildly spicy and savory/salty from herbs and spices.
+	Stir-Fries
+		Dish: Garlic Sauce
+		Price: $19.95
+		Description: Sauted with fresh garlic, onions, mushrooms, and broccoli.
+		Dish: Oyster Sauce with Broccoli
+		Price: $19.95
+		Description: Sauted with broccoli in oyster sauce.
+		Dish: Sweet and Sour Sauce
+		Price: $19.95
+		Description: Sauted with cucumbers, tomatoes, carrots, bell peppers, and pineapples in sweet and sour sauce. (Gluten free.)
+		Dish: Ginger Sauce
+		Price: $19.95
+		Description: Sauted with fresh ginger, onions, mushrooms, bell peppers, and carrots.
+		Dish: Cashew Nut Sauce
+		Price: $19.95
+		Description: Sauted with cashew nuts, onions, baby corns, mushrooms, and bell pepper.
+		Dish: Orange Sauce
+		Price: $19.95
+		Description: Sauted with broccoli, onions, carrots, and bell peppers in orange sauce.
+		Dish: Stir-Fried Green Bean
+		Price: $19.95
+		Description: Sauted with green beans, onions, and basil in savory house curry sauce.
+		Dish: Sweet Roasted Chili Sauce
+		Price: $19.95
+		Description: Sauted with chili paste, bell peppers, zucchini, bamboo shoots, onions, mushrooms, and basil.
+		Dish: Kee Mao Sauce
+		Price: $19.95
+		Description: Sauted with fresh basil, onions, bamboo shoots, mushrooms, chili peppers, and bell peppers.
+		Dish: Basil Sauce
+		Price: $19.95
+		Description: Sauted with fresh basil, onions, mushrooms, chili peppers, and bell peppers.
+		Dish: Peanut Sauce (Rama)
+		Price: $19.95
+		Description: Spinach topped with our famous peanut sauce. (Gluten free.)
+		Dish: What a Feeling
+		Price: $20.95
+		Description: Chicken, pork, and beef sauted with bamboo strips, basil, bell peppers, mushrooms, carrots, and onions in a hot spicy wine sauce.
+		Dish: Supreme Seafood
+		Price: $23.95
+		Description: Prawns, squid, and white fish sauted with onions, carrots, zucchini, mushrooms, baby corn, bell peppers, and basil in mild spicy sauce.
+		Dish: Fried Whole Fish
+		Price: $25.95
+		Description: Deep-fried whole fish (local trout) served with mild spicy plum sauce.
+	Grilled Dishes
+		Dish: Grilled Chicken
+		Price: $21.95
+		Description: A Thai spin on an Indian favorite tender chicken marinated in a sweet and spicy mixture of coconut milk, yellow curry, and other flavorful spices, then grilled. (Gluten free.)
+		Dish: Grilled Pork
+		Price: $21.95
+		Description: Pork marinated in fresh garlic, cilantro, and black peppers served with our house sauce.
+		Dish: Grilled Beef
+		Price: $21.95
+		Description: Beef Thai-marinated, then grilled to tender perfection.
+	Lunch Noodles
+		Dish: 1. Pad Thai
+		Price: $12.95
+		Description: Stir fried fresh rice noddles with egg, ground peanuts, fresh bean sports and choice of protein. Gluten free.
+		Dish: 2. See Lew
+		Price: $12.95
+		Description: Stir fried fresh wide noodles with sweet soy sauce, egg and broccoli and choice of protein.
+		Dish: 3. Chicken Noodles
+		Price: $12.95
+		Description: Stir fried fresh wide noodles with chicken, onions, egg, tomatoes, carrot and Pineapple.
+		Dish: 4. Kee Mao Noodles
+		Price: $12.95
+		Description: Stir fried fresh wide noodles with basil, bamboo shoots, bell pepper, mushrooms, onions and tomatoes and choice of protein.
+		Dish: 5. Tom Yum Noodle Soup
+		Price: $13.95
+		Description: Hot and sour soup with fresh thin rice noodles, bean sprouts and ground peanuts and choice of protein.
+	Lunch Vegetarian
+		Dish: 6. Plig King Tofu
+		Price: $12.95
+		Description: The taste of plig king sauce is a little salty and sweet, mixing together sauteed fried tofu with green bean, onions, bell peppers and fresh basil in plig king curry sauce.
+		Dish: 7. Tofu with Cashew Nuts
+		Price: $12.95
+		Description: Fried tofu sauteed with cashew nuts, bell pepper, onions, baby corn and mushrooms.
+		Dish: 8. Hot Garden
+		Price: $12.95
+		Description: Sauteed mixed vegetable and fresh tofu in spicy curry sauce.
+		Dish: 9. Shower Green
+		Price: $12.95
+		Description: Mixed vegetable topped with peanut sauce.
+		Dish: 10. Basil Vegetables
+		Price: $12.95
+		Description: Sauteed mixed vegetables with basil.
+	Lunch Seafood
+		Dish: 14. Supreme Seafood
+		Price: $14.95
+		Description: Prawns squid and fish sauteed with onions, mushrooms, baby com, carrot, zucchini, bell peppers and basil in spicy sauce.
+		Dish: 15. Garlic Prawns
+		Price: $14.25
+		Description: Sauteed prawns with fresh garlic, onions, mushrooms and broccoli.
+		Dish: 16. Prawn Delight
+		Price: $14.25
+		Description: Sauteed prawns with green bean, onions, bell pepper and basil in plig king curry paste.
+		Dish: 17. Ginger Salmon
+		Price: $14.95
+		Description: Salmon sauteed with ginger, onions, baby corn, carrot, mushrooms and bell pepper.
+		Dish: 18. Salmon Plig King
+		Price: $14.95
+		Description: Salmon sauteed with green bean, bell peppers, onions and basil, plig king curry paste.
+	Lunch Chicken
+		Dish: 19. Chicken Fried Rice
+		Price: $12.95
+		Description: Fried rice with chicken, egg, onions, pineapple, tomato, carrot and green onions.
+		Dish: 20. Chicken with Cashew Nuts
+		Price: $12.95
+		Description: Chicken sauteed with cashew nuts, onions, baby corn, mushrooms and bell peppers.
+		Dish: 21. Ginger Chicken
+		Price: $12.95
+		Description: Chicken sauteed with ginger, onions, baby corn, carrot, mushrooms and bell peppers.
+		Dish: 22. Orange Chicken
+		Price: $12.95
+		Description: Chicken sauteed with broccoli, onions, carrot and bell peppers in orange sauce.
+		Dish: 23. Plig King Chicken
+		Price: $12.95
+		Description: Chicken sauteed with green bean, onions, bell peppers and basil, plig king curry paste.
+		Dish: 24. Garlic Chicken
+		Price: $12.95
+		Description: Chicken sauteed with fresh garlic, onions, mushrooms and broccoli.
+		Dish: 25. Pra Ram Long Song
+		Price: $12.95
+		Description: Chicken on bed with spinach on topped with peanuts sauce.
+		Dish: 26. What a Feeling
+		Price: $13.95
+		Description: Combination of chicken, pork, beef sauteed in bamboo strips, basil, carrot, bell peppers, mushrooms, onions and hot sauce.
+	Lunch Combination Special
+		Dish: C1. Chicken Cashew Nuts Lunch Combo
+		Price: $13.95
+		Description: Chicken stir fry with cashew nuts, onion, baby corn, mushrooms and bell peppers.
+		Dish: C2. Garlic Chicken Lunch Combo
+		Price: $13.95
+		Description: Chicken stir fry: fresh garlic, onions, mushrooms and broccoli.
+		Dish: C3. Red Curry Chicken Lunch Combo
+		Price: $13.95
+		Description: Red curry chicken: bamboo shoot, basil, bell peppers and coconut milk. Gluten free.
+		Dish: C4. Panang Curry Chicken Lunch Combo
+		Price: $13.95
+		Description: Panang Curry chicken: bell peppers, basil, kaffir lime leaves and coconut milk. Gluten free.
+		Dish: C5. Chicken Peanut Sauce and Spinach Lunch Combo
+		Price: $13.95
+		Description: Chicken on a bed of spinach and topped with peanut sauce.
+		Dish: C6. Plig King Chicken Lunch Combo
+		Price: $13.95
+		Description: Chicken stir fry with green bean, onion, bell peppers and basil in plig king curry paste.
+		Dish: C7. Basil Vegetables Lunch Combo
+		Price: $13.95
+		Description: Sauteed mixed vegetables along with basil.
+	Lunch Pork and Beef
+		Dish: 11. Orange Beef
+		Price: $12.95
+		Description: Beef sauteed with broccoli, bell peppers, carrots and yellow onions in orange sauce.
+		Dish: 12. Basil Beef
+		Price: $12.95
+		Description: Beef sauteed with basil, yellow onions, mushrooms and bell peppers.
+		Dish: 13. Garlic Pork
+		Price: $12.95
+		Description: Pork sauteed with fresh garlic, onions, mushrooms and broccoli.
+	Lunch Curry
+		Dish: 27. Red Chicken Curry
+		Price: $12.95
+		Description: Red curry with bamboo shoots, bell peppers, basil and coconut milk.
+		Dish: 28. Green Chicken Curry
+		Price: $12.95
+		Description: Green curry with bamboo shoots, egg plant, bell peppers, basil and coconut milk.
+		Dish: 29. Panang Chicken Curry
+		Price: $12.95
+		Description: Panang curry, bell peppers, basil, kaffir lime leaves and coconut milk.
+	Side Orders
+		Dish: White Rice
+		Price: $2.00
+		Dish: Brown Rice
+		Price: $3.00
+		Dish: Steamed Noodles
+		Price: $4.50
+		Dish: Steamed Vegetables
+		Price: $7.75
+		Dish: Famous Mild Spicy Peanut Sauce
+		Price: $4.00
+	Desserts
+		Dish: Homemade Coconut Ice Cream
+		Price: $6.75
+		Dish: Home Made Black Rice Pudding
+		Price: $6.75
+		Description: This black rice pudding is made with Bahn Thais original recipe in-house.
+		Dish: Mango Sticky Rice
+		Price: $8.25
+		Dish: Mango Sticky Rice
+		Price: $9.25
+		Description: Thai mangoes are in-season and sweet during Seattle summers. It is served on top of Thai dessert sweet sticky rice with coconut milk on top.
+	Beverages
+		Dish: Thai Iced Tea
+		Price: $5.50
+		Description: Our Thai iced tea is brewed in-house - a popular and refreshing Thai beverage.
+		Dish: Thai Iced Coffee
+		Price: $5.50
+		Description: Our Thai iced coffee is brewed in-house - perfect for an afternoon pick-me-up or gloomy days!
+		Dish: Regular Iced Tea
+		Price: $5.75
+		Dish: Coke
+		Price: $4.00
+		Description: Packaged canned.
+		Dish: Mango Smoothie
+		Price: $6.95
+		Dish: Lychee Smoothie
+		Price: $6.95
+		Dish: Diet Coke
+		Price: $4.00
+		Description: Packaged canned.
+		Dish: Sprite
+		Price: $4.00
+		Description: Packaged canned.
+
