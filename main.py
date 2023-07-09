@@ -68,10 +68,10 @@ async def ask(request: FoodRequest):
         print("Food info tokens:", num_tokens_from_string(nearby_food_info))
         prompt = open('system_prompt.txt', 'r').read()
         prompt += nearby_food_info
-        with open('complete_prompt.txt', 'w') as outfile:
-            outfile.write(prompt)
-        with open('food_info.json', 'w') as outfile:
-            outfile.write(json.dumps(food_info_json))
+        # with open('complete_prompt.txt', 'w') as outfile:
+        #     outfile.write(prompt)
+        # with open('food_info.json', 'w') as outfile:
+        #     outfile.write(json.dumps(food_info_json))
             
         messages.append(SystemMessage(content=prompt))
         # Then, we have the user's prompt as the second message.
